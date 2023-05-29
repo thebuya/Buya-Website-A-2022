@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--For Facebook & Whatsapp -->
+    <!-- Site Name, Title, and Description To Be Displayed -->
+    <meta property="og:site_name" content="Buya Art">
+    <meta property="og:title" content="Gift Your Family">
+    <meta property="og:title" name="twitter:title" itemprop="name" content="Gift Your Family">
+    <meta property="og:description" content="Turning Memories Into Art For More Than Half A Decade.">
+    <meta property="og:description" name="twitter:description" itemprop="description"
+        content="Turning Memories Into Art For More Than Half A Decade.">
+
+
+    <!-- Image to Display -->
+    <meta property="og:image" itemprop="image" content="./preview.png">
+    <meta property="og:image" name="twitter:image:src" itemprop="image" content="./preview.png">
+    <!--For Microsoft Apps -->
+    <meta name="msapplication-TileImage" content="./preview.png">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Any Size upto 300. Above 300px will not wok in whatsapp -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <!-- Website to visit when clicked in Facebook or Whatsapp-->
+    <meta property="og:url" content="https://artbybuya.com">
+
+    <meta name="twitter:card" content="Choose Art">
+    <meta property="og:image:alt" name="twitter:image:alt"
+        content="Gift Your Family Art. Turning memories into art for over half a decade.">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon2.ico" />
+    <link rel="icon" href="./favicon2.ico" />
+    <title>About BuyaArt</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/fonts/css/all.css">
+    <!-- UNI-Icons only -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!--Swiper CSS Locally -->
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+    <style>
+        .dark-theme .buya__nav {
+            /* background-image: url(./assets/images/darkmode.jpg); */
+            box-shadow: 0px 0px 4px rgb(0 0 0 / 60%);
+            border: 1px solid #2623231a;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            background-position: initial;
+            background-size: cover;
+            background: #231f1e;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("G8mh0ombjCTxwWsiV");
+        })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP84J19V31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FP84J19V31');
+    </script>
+    <style>
+        .dark-theme .active-link {
+            color: #fff;
+        }
+
+        .active-link {
+            color: var(--red-color);
+        }
+
+        .headings .heading-special {
+            color: #d2d2d2;
+            /*margin-bottom: -3rem;*/
+            margin-top: -3rem;
+            font-weight: 200;
+            z-index: 2;
+        }
+
+        .dark-theme .heading-special {
+            color: #4d4948;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="buya__nav">
+        <a href="./index.html">Home<span style="color: var(--red-color);">.</span></a>
+        <ul class="buya__nav_list" id="nav-menu">
+            <i class="fa fa-times nav__close" id="nav-close"></i>
+            <li><a href="#" class="nav__link active-link" onclick="changeNav(0)">About</a></li>
+            <li><a href="./product.html" class="nav__link" onclick="changeNav(1)">Art Shop</a></li>
+            <li><a href="./gallery.html" class="nav__link" onclick="changeNav(2)">Gallery</a></li>
+            <li><a href="./blog.html" class="nav__link" onclick="changeNav(3)">Blog</a></li>
+            <li><a href="https://wa.me/256783909668" class="nav__link" id="contact-btn" target="_blank"
+                    target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa fa-moon moon change-theme" id="theme-button" aria-hidden="true">
+                    </i>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="small-dark">
+            <i class="fa fa-moon moon change-theme" id="ztheme-button" aria-hidden="true">
+            </i>
+        </a>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="about-container blog-section">
+
+
+
+
+
+
+
+        <!-- <div class="about-heading">
+            <h3 class="about-header">
+                Transform Your <br> Memories Into Art<span style="color: var(--red-color);">.</span>
+            </h3>-->
+
+        <!-- <h4 class="wordCarousel about-subquote blog-quote">
+                <span> If You Like To </span>
+                <a class="new-class">-->
+        <!-- Use classes 2,3,4, or 5 to match the number of words -->
+        <!--  <ul class="flip3 about-quoteplay" style="padding-left: 0;">
+                        <li >Make Your Loved Ones Happy</li>
+                        <li>Gift Yourself Sometimes</li>
+                        <li>Make Your Family Happy</li>
+                        <li>Support your local artist</li>
+                        <li>Collect Dope Artwork </li>
+                    </ul>
+                </a>
+                <span> <br> You Are In The Right Place.</span>
+            </h4> 
+
+            <p class="about-subquote blog-quote">
+                If You Like To
+                <span class="about-quoteplay">Make Your Loved Ones Happy
+                </span>
+                <br>
+                You Are In The Right Place.
+            </p>
+
+        </div> -->
+
+        <div class="headings">
+            <h2 class="heading giftfamilyheading">Gifting Loved Ones</h2>
+            <h2 class="heading2 heading" style="font-size: 16px; color: #6c6b6b;font-weight:400;">
+                Art that creates Generational Joy.
+                <span style="color: #6c6b6b; "><span style="color: var(--red-color);">.</span>
+                </span>
+            </h2>
+        </div>
+
+
+
+        <div class="origin">
+            <div class="origin-story">
+                <h4 class="about-subheading">
+                    Origin
+                    <span class="about-quoteplay">
+                        Story
+                    </span>
+                </h4>
+                <p class="about-body">
+                    <!--  As a brand, Our big bang started in 2020, 
+                        but our founder Morris has close to a decades experience
+                        in crafting his artwork. Let him tell you where it all begun; <br><br> -->
+                    <span style="color:  #888888; font-weight: 300; font-size:90%;">
+                        <!--Greetings esteemed audience, <br>
+                        It's  here. <br> -->
+                        During the festive holidays of 2020, I (Your Boy, Buya) was tasked with the
+                        important <span
+                            style="background-color: var(--highlightbackground); color: var(--highlightcolor);">
+                            mission of finding the perfect gift</span>
+                        for my uncle, my mum's big bro. Being the creative genius
+                        that I am, I suggested creating a custom digital artwork for him.
+                        I dove headfirst into the project, determined to create something
+                        truly spectacular.
+                        <br>
+                        After weeks of tireless experimentation, I emerged victorious with <span
+                            style="background-color: var(--highlightbackground); color: var(--highlightcolor);"> a
+                            masterpiece,
+                        </span> that brought immense joy to my uncle and family. And let me tell you,
+                        that feeling was addictive. That's why, with the help of my new partners,
+                        we're dedicated to spreading that joy as far and wide as we can.
+                        <br><br>
+                        <!--
+                        Hey Friends, <br>
+                        It’s me, Buya. <br>
+                        During the Festive holidays of 2020, my mum told me she
+                        <span style="background-color: var(--highlightbackground); color: var(--highlightcolor);">
+                            wanted to gift my
+                            uncle</span>,
+                        her big-bro and needed my assistance
+                        <!-- <span style="font-style: italic; color: #888888;" > 
+                                (Like she does everytimes she wants to gift someone.)
+                            </span> -->
+                        <!--  with picking out a nice gift. I offered to create digital artwork for her
+                        and we could frame it. I was creating purely for fun at this point
+                        and still am to this day.<br>
+                        I made a promise it'd be good so <span
+                        style="background-color: var(--highlightbackground); color: var(--highlightcolor);"> It had
+                        to be very
+                        good.</span> It took me around a month of iterating,
+                        and in the end I did what I do best and created a masterpiece.
+                        Upon delivery, and after seeing the joy it brought to their faces,
+                        I did not look back and to this day, along with new partners,
+                        we are only striving to give out that joy as many times as we can.
+                        <br><br> -->
+
+                    </span>
+                    Buya✌🏾
+
+                </p>
+
+                <div class="button-container">
+                    <div class="swipe-down-box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="#" class="button services__button" id="MakeOrder">Make Your Order</a>
+                    <!--1.Order Portrait 2.Make Your Order-->
+
+                    <div class="services__modal">
+                        <div class="services__modal-content makeorder-stepcontent">
+
+                            <!-- <h4 class="services__modal-title">Standard Sizes </h4> -->
+                            <i class="fa fa-times services__modal-close" id="nav-close"></i>
+
+                            <form action="#" id="Form1" method="post" autocomplete="on">
+                                <h3>Ordering Your Portrait</h3>
+                                <div class="inputgroup">
+                                    <input type="name" name="name" placeholder="Collectors Name" id="Collector-name"
+                                        onkeyup="validateName()" required>
+                                    <span id="name-error"></span>
+                                </div>
+                                <div class="inputgroup">
+                                    <input type="email" name="email" placeholder="Collectors Email" id="Collector-email"
+                                        onkeyup="validateEmail()" required>
+                                    <span id="email-error"></span>
+                                </div>
+                                <div class="inputgroup">
+                                    <input type="text" name="number" placeholder="Phone Number [Optional]"
+                                        id="Collector-phone">
+
+                                </div>
+                                <div class="inputgroup">
+                                    <textarea name="messageorder" cols="0" rows="5"
+                                        placeholder="Tell us about the portrait you want." class="contact__input"
+                                        id="Collector-message" onkeyup="validateMessage()"></textarea>
+                                    <span id="message-error"></span>
+                                </div>
+
+
+
+
+                                <div class="btn-box">
+                                    <button type="button" id="next1" onclick="return validateForm()">Next</button>
+                                    <span id="next-error"></span>
+                                </div>
+                            </form>
+
+                            <form action="#" id="Form2">
+                                <h3>Art Details</h3>
+
+                                <div class="selections">
+                                    <div class="framing-style">
+                                        <div class="sizeprice">
+                                            <h5>Size & Price</h5>
+                                            <!--
+                                            <div class="pricemenu">
+                                                <div class="price-dropdown">
+                                                    <div class="price-select">
+                                                        <span class="price-selected">USD</span>
+                                                        <div class="price-caret"></div>
+                                                    </div>
+                                                    <ul class="price-menu">
+                                                        <li class="price-active">USD</li>
+                                                        <li class="uganda" onkeyup="showUgandanPrices()">UGX</li>
+                                                        <li>KSH</li>
+                                                        <li>RwF</li>
+                                                    </ul>
+                                                </div>
+                                            </div>  -->
+                                        </div>
+
+
+
+
+                                        <div class="selections-option">
+                                            <input type="radio" name="Size-Price" id="fram2" value="A4">
+                                            <!-- <label for="fram5">A4 - 150,000 UGX</label> -->
+                                            <label for="fram2" class="A4Price">A4 - 40 USD</label>
+                                        </div>
+                                        <div class="selections-option">
+                                            <input type="radio" name="Size-Price" id="fram5" value="A3">
+                                            <!-- <label for="fram5">A3 - 200,000 UGX</label> -->
+                                            <label for="fram5" class="A3Price">A3 - 60 USD</label>
+                                        </div>
+                                        <div class="selections-option">
+                                            <input type="radio" name="Size-Price" id="fram6" value="A2">
+                                            <label for="fram6" class="fram6">A2 - 100 USD</label>
+                                            <!--  <label for="fram6">A2 - 350,000 UGX</label> -->
+                                        </div>
+                                        <div class="selections-option">
+                                            <input type="radio" name="Size-Price" id="fram3" value="A1">
+                                            <label for="fram3" class="fram3">A1 - 125 USD</label>
+                                            <!--  <label for="fram3">A1 - 500,000 UGX</label> -->
+                                        </div>
+                                        <div class="selections-option">
+                                            <input type="radio" name="Size-Price" id="fram4" value="A0">
+                                            <label for="fram4" class="fram4">A0 - 175 USD</label>
+                                            <!--  <label for="fram4">A0 - 600,000 UGX</label> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="framing-style">
+                                        <h5>Frame Style</h5>
+                                        <div class="selections-option">
+                                            <input type="radio" name="framing-style" id="fram1" value="canvas">
+                                            <label for="fram1"> Canvas Frame</label>
+                                        </div>
+
+                                        <div class="selections-option">
+                                            <input type="radio" name="framing-style" id="fram2" value="glass">
+                                            <label for="fram2"> Glass Frame</label>
+                                        </div>
+                                        <div class="selections-option">
+                                            <input type="radio" name="framing-style" id="fram7" value="board">
+                                            <label for="fram7"> On-Board</label>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="artstyle-quantity">
+                                    <div class="art-style">
+                                        <h5>Art Style</h5>
+                                        <div class="selections-option">
+                                            <input type="radio" name="art-style" id="fram10" value="painting">
+                                            <label for="fram10"> Painting Art</label>
+                                        </div>
+
+                                        <div class="selections-option">
+                                            <input type="radio" name="art-style" id="fram20" value="pencil">
+                                            <label for="fram20"> Pencil Art</label>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="selections-optionz">
+                                        <label for="fram1"> Quantity </label>
+                                        <input type="number" placeholder="1">
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="btn-box">
+                                    <button type="button" id="back1">Back</button>
+                                    <button type="button" id="submit1">Submit Order</button>
+                                    <span id="submit-error"></span>
+                                </div>
+
+                                <p class="footer-caption formcaption"> We will be in touch within 24hrs to initiate
+                                    requirements and
+                                    payments.</p>
+                            </form>
+
+
+
+                            <div class="step-row">
+                                <div id="zprogress"></div>
+                                <div class="step-col"><small>Step 1</small></div>
+                                <div class="step-col"><small>Step 2</small></div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="origin-image"></div>
+
+
+        </div>
+        <div class="headings">
+            <h2 class="heading-special">
+                For over half a Decade.
+            </h2>
+        </div>
+
+
+        <!-- e) Services-->
+        <section class="services-section" id="services">
+            <h2 class="about-subheading" id="pricing">Ready To Serve</h2>
+            <p class="blog-quote">Focusing on Art</p>
+
+            <div class="services__container container grid">
+                <!-- Services 1.-->
+                <div class="services__content">
+                    <!--<a href="#" class="paint-serveice-image" id="paint-service"></a>-->
+                    <img class="paint-service-image" src="./assets/images/Paintings/shivan" alt="" srcset="">
+
+                    <div class="service-details">
+                        <h3 class="booktitle"> Paintings</h3>
+                        <p class="booksubtitle">Delivery free around Kampala.</p>
+                        <span class="btn services__button">View Details</span>
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Custom Paintings </h4>
+                            <i class="fa fa-times services__modal-close" id="nav-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Customizable paintings that capture your special memories.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Available in a variety of sizes and styles to fit your unique preferences.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Choose your own photo or let Buya recommend from an album.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Perfect for gifting to loved ones.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Professional-grade canvas and timber used for a timeless, high-quality finish.
+                                    </p>
+
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services 2.-->
+                <div class="services__content">
+                    <!--<a href="#" class="paint-serveice-image" id="paint-service"></a>-->
+                    <img class="paint-service-image" src="./assets/images/Pencil/sheila-before.jpg" alt="" srcset="">
+
+                    <div class="service-details">
+                        <h3 class="booktitle"> Pencil Portraits</h3>
+                        <p class="booksubtitle">black and white or full color </p>
+                        <span class="btn services__button">View Details</span>
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Pencil Art</h4>
+                            <i class="fa fa-times services__modal-close" id="nav-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Detailed and realistic graphite portraits</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Available in a range of styles, including black and white or full color, to fit
+                                        your personal taste.
+                                    </p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>High-quality prints available for larger sizes.</p>
+                                </li>
+                                <li class="services__modal-service">
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="blog-quote second-blog-quote">And Design</p>
+
+            <div class="services__container container grid">
+
+                <!-- UI/UX Designer.-->
+                <div class="services__content des-con">
+                    <!--<a href="#" class="paint-serveice-image" id="paint-service"></a>-->
+                    <img class="design-service-image" src="./assets/images/programmer.png" alt="" srcset="">
+
+                    <div class="service-details">
+                        <h3 class="booktitle">Front-End Development</h3>
+                        <p class="booksubtitle">Web Design & Web Development</p>
+                        <span class="btn services__button">Visit Sites</span>
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Web-Designing & Web Development</h4>
+                            <i class="fa fa-times services__modal-close" id="nav-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Create Modern and user-friendly websites for your business or personal brand.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Provide on-going maintenance and support available.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>High-quality code and optimization for fast loading times and improved SEO..</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-globe services__modal-icon" style="color: rgb(43, 138, 210);"></i>
+
+                                    <a href="./posts-code/ccl/index.html" style="color: rgb(43, 138, 210);"
+                                        target="_blank">Ceramics Central Website
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photoshop Classes.-->
+                <div class="services__content des-con">
+                    <!--<a href="#" class="paint-serveice-image" id="paint-service"></a>-->
+                    <img class="design-service-image" src="./assets/images/photoshop-2.png" alt="" srcset="">
+
+                    <div class="service-details">
+                        <h3 class="booktitle"> Photoshop Classes</h3>
+                        <p class="booksubtitle"> Beginner-friendly</p>
+                        <span class="btn  services__button">Sign Up</span>
+                        <!--offbtn-- To DeActivate it-->
+                        <!--services__button-- To Activate it-->
+                        <!-- <i>[Opening June]</i>-->
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Photoshop Mentorship</h4>
+                            <i class="fa fa-times services__modal-close" id="nav-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Learn valuable skills from a professional artist and designer.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Discover how to create stunning photo collages and composites.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Increase employability, adaptability with Photoshop skills.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Personalized, one-on-one sessions tailored to your skill level and goals.</p>
+                                </li>
+
+                            </ul>
+                            <ul class="footer-social-icons">
+                                <li class="footer-icon">
+                                    <a href="https://wa.me/256783909668" target="_blank" class="footer-i">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+
+        <section class="clientsec-reviews">
+            <h2 class="about-subheading" id="collectorsReviews">Collectors Reviews</h2>
+            <div id="slider">
+                <div class="slide">
+                    <div class="slide_content">
+                        <h3 class="booktitle">Batekerezza Daniel</h3>
+                        <p>"Morris's paintings are truly one-of-a-kind.
+                            I would recommend him to anyone looking to capture
+                            their memories in a <span>unique and beautiful</span> way."</p>
+
+                    </div>
+                    <div class="image_slide rev-img1">
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="slide_content">
+                        <h3 class="booktitle">Shivan Ninsiima</h3>
+                        <p>"The artwork was really lovely🤍. I really <span>appreciate</span>
+                            how well our familys spirit was captured.💫"
+                        </p>
+                    </div>
+                    <div class="image_slide rev-img2">
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="slide_content">
+                        <h3 class="booktitle">Aaron Tokwaro</h3>
+                        <p>"Buya 👨🏾‍🎨 is so creative. The artwork <span>exceeded my expectations</span>. The family
+                            loved it, and I would recommend you give him your money."</p>
+                    </div>
+                    <div class="image_slide rev-img3">
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_content">
+                        <h3 class="booktitle">Laura Karuhanga</h3>
+                        <p>"Morris thank you so much. The painting was so nice, even <span>my mom loved it</span>."</p>
+                    </div>
+                    <div class="image_slide rev-img4">
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_content">
+                        <h3 class="booktitle">Cynthia Madette</h3>
+                        <p>"This was such a nice gift for the graduation."</p>
+                    </div>
+                    <div class="image_slide rev-img5">
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_content">
+                        <h3 class="booktitle">Lazarus Waiswa</h3>
+                        <p>"Thank you brother."</p>
+                    </div>
+                    <div class="image_slide rev-img6">
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_content">
+                        <h3 class="booktitle">Noah Lubega</h3>
+                        <p>"Thank you Morris for this wonderful gift.
+                            It's a truly unique piece of art that captures
+                            and will serve as <span>a constant reminder</span> of my achievement."</p>
+                    </div>
+                    <div class="image_slide rev-img7">
+
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide_content">
+                        <h3 class="booktitle">Sandra Nshuti</h3>
+                        <p>"Buya's art is nothing short of amazing.
+                            He turned our memory into a work of art that we will
+                            <span> cherish
+                                for years</span> to come. We can't thank him enough!"
+                        </p>
+                    </div>
+                    <div class="image_slide rev-img8">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="question-section" id="questionssection">
+
+            <h2 style="margin-bottom: 3rem; width:80%;" class="about-subheading" id="questions">Frequently Asked
+                Questions</h2>
+
+            <div class="question-wrapper">
+                <button class="question-toggle">
+                    How long does it take to complete a portrait?
+                    <i class="fa fa-angle-right icon"></i>
+                </button>
+                <div class="question-content">
+                    <p>
+
+                        The completion time for a portrait depends on the size and complexity of the artwork and the
+                        number of revisions requested. Typically, we can complete an A3 and A2 portrait within a week,
+                        and an A1 portrait within 1-2 weeks. <br> However, please note that these
+                        are estimates and may vary depending on our workload and any additional requests or revisions.
+                        We will always keep you informed of the progress of your portrait and let you know if there are
+                        any delays.
+                    </p>
+                </div>
+            </div>
+            <div class="question-wrapper">
+                <button class="question-toggle">
+                    How many photos should I provide for a portrait ?
+                    <i class="fa fa-angle-right icon"></i>
+                </button>
+                <div class="question-content">
+                    <p>
+
+                        For an A3 portrait, we recommend sharing 1-3 photos, <br>
+                        while 1-5 photos are recommended for an A2
+                        portrait, <br>
+                        and 1-8 photos for an A1 portrait. <br><br> However, there are no hard and fast rules, and
+                        we
+                        are happy to work with whatever photos you provide.
+                    </p>
+                </div>
+            </div>
+
+            <div class="question-wrapper">
+                <button class="question-toggle">
+                    Can you create a portrait from a low-quality or blurry photo?
+                    <i class="fa fa-angle-right icon"></i>
+                </button>
+                <div class="question-content">
+                    <p>We recommend using a high-quality photo with good lighting to ensure the best possible outcome
+                        for your portrait. However, in some cases, we may be able to work with lower-quality photos.
+                        Just send us the photo, and we'll let you know if we can use it to create your portrait. Keep in
+                        mind that the quality of the photo may affect the final result of the portrait and that we may
+                        need to make some adjustments or revisions to achieve the desired outcome.
+
+                    </p>
+                </div>
+            </div>
+            <div class="question-wrapper">
+                <button class="question-toggle">
+                    How to know which photos to use?
+                    <i class="fa fa-angle-right icon"></i>
+                </button>
+                <div class="question-content">
+                    <p>To ensure the best possible outcome for your portrait, we recommend using: <br>
+                        - <span style="color: #4ea4cd;">Good quality </span>taken
+                        with a smartphone camera or better.
+                        <br>When sending your photos, we advise using <a href="mailto: info@artbybuya.com"
+                            target="_blank">email <i class="fas fa-envelope"></i> </a>to maintain the best quality.
+                        <br>
+                        - <span style="color: #4ea4cd;">Well-lit images </span>can also make a big difference in the
+                        final quality of the portrait.
+
+                        <br> <br>
+                        - If the photos are hardcopy, you can still scan them under good lighting, and still email them.
+                        <br> Alternatively, they can be delivered to us and returned with the portrait.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="question-wrapper">
+                <button class="question-toggle">
+                    Can I request changes to the artwork after it's completed?
+                    <i class="fa fa-angle-right icon"></i>
+                </button>
+                <div class="question-content">
+                    <p>Absolutely! We offer up to three revisions for your portrait at no additional cost. If you
+                        require
+                        further revisions, a fee may apply. The exact fee depends on the amount and complexity of the
+                        changes needed, but typically ranges from 5-10% of the original cost of the portrait.
+                    </p>
+                </div>
+            </div>
+
+            <div class="question-wrapper">
+                <button class="question-toggle">
+                    How is the portrait delivery done ?
+                    <i class="fa fa-angle-right icon"></i>
+                </button>
+                <div class="question-content">
+                    <p>After getting the receiving address from the collector. A trusted rider delivers the package to
+                        said location. Delivery charges are free around Kampala. <br> We can still deliver beyond, but
+                        it would take
+                        an extra costs and time. <br> <br>
+
+                        In Uganda, Rwanda & Kenya, we guarantee delivery within a week of completion. Delivery times may
+                        also vary for international orders, but we will keep
+                        you informed of progress and tracking information. If you have any concerns or special
+                        requirements, please let us know and we'll do our best to accommodate them.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+            <!--
+
+            <div class="question-wrapper">
+                <button class="question-toggle">
+                    What is the return policy on artwork bought from the shop ?
+                    <i class="fa fa-angle-right icon"></i>
+                </button>
+                <div class="question-content">
+
+
+
+                    <p> We want you to be completely satisfied with your purchase. If for any reason you are not, we
+                        offer a 7-day return policy for our art products.
+                        <br> Depending on the context, refund negotations can be done.
+                    </p>
+                </div>
+            </div>
+-->
+
+
+            <div class="question-wrapper">
+                <button class="question-toggle">
+                    Can i get discounts on the portraits ?
+                    <i class="fa fa-angle-right icon"></i>
+                </button>
+                <div class="question-content">
+                    <p>Yes, there are discounts. All you have to do is subscribe to our newsletter and you'll be the
+                        first to know about our limited-time deals and promotions. Trust us, it's worth it. </p>
+                </div>
+            </div>
+
+            <p class="question-any booksubtitle">
+                If you have any questions, please reach out to us at <br>
+                [<a href="mailto: info@artbybuya.com" target="_blank"> info@artbybuya.com </a>/ <a
+                    href="tel:+256753-620-788" target="_blank">
+                    +256 753-620-788
+                </a>]
+            </p>
+
+
+        </section>
+
+
+        <div class="signupLetter">
+            <div class="headingLetter">
+                <h3 class="headLetter">
+                    Our NewsLetter
+                </h3>
+                <h5 class="offer-Letter">
+                    Join to get early discounts & bonus art content.
+                </h5>
+            </div>
+
+            <div class="inputbutton-Letter">
+                <div class="inputBox">
+                    <input type="text" id="subscriber-email" required="required">
+                    <span>Email address</span>
+                    <i></i>
+                </div>
+                <a onclick="SubscribeMail()">
+                    Join newsletter
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <h4 class="footer-header">Quick-Links</h4>
+        <div class="footer-lists">
+            <ul class="footer-links">
+                <li class="footer-link">
+                    <a href="#MakeOrder" class="footer-a services__button3" id="MakeOrder2">
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                        Order Portrait</a>
+
+
+                </li>
+                <li class="footer-link">
+                    <a href="./product.html" class="footer-a">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        Art-Shop</a>
+                </li>
+                <li class="footer-link">
+                    <a href="./gallery.html#latestartwork" class="footer-a">
+                        <i class="fa fa-file-image" aria-hidden="true"></i>
+                        Art-Gallery</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-links">
+                <li class="footer-link">
+
+                    <a href="#collectorsReviews" class="footer-a">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                        Collectors Reviews</a>
+                </li>
+
+                <li class="footer-link">
+                    <a href="#pricing" class="footer-a">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                        Services </a>
+                </li>
+                <li class="footer-link">
+                    <a href="#questionssection" class="footer-a">
+                        <i class="fa fa-tags" aria-hidden="true"></i>
+                        Questions</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contactlinks">
+            <div class="footer-email-numbers">
+                <a href="mailto: info@artbybuya.com" target="_blank">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    info@artbybuya.com
+                </a>
+                <a href="tel:+256783-909-668" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 783-909668 🇺🇬
+                </a>
+                <a href="tel:+256753-620-788" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 753-620788 🇺🇬
+                </a>
+                <a href="tel:+256753-620-788" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 753-620788 🇺🇬
+                </a>
+            </div>
+
+            <ul class="footer-social-icons">
+
+                <li class="footer-icon">
+                    <a href="https://twitter.com/ich_bin_buya" target="_blank" class="footer-i">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="https://wa.me/256783909668" target="_blank" class="footer-i">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                </li>
+                <li class="footer-icon">
+                    <a target="_blank" href="https://www.instagram.com/the_buya/" class="footer-i">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="footer-caption">
+                Site Architect: <a href="./index.html" target="_blank" rel="noreferrer"> Buya </a></p>
+        </div>
+    </footer>
+
+    <div id="progress">
+        <span id="progress-value"><img src="./assets/svgs/backtotop" alt="" srcset=""></span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        /*  let ugandaShow = document.getElementsByClassName('fram5');
+          let ugandaPrice = document.getElementsByClassName('uganda');
+      
+          ugandaShow.addEventListener('click', () => {
+              fram5.innerHTML = "A3 - 200,000 UGX";
+          }
+          */
+        function showUgandanPrices() {
+            /*let ugandaShow = document.getElementsByClassName('fram5');*/
+            /* let ugandaShow = document.querySelectorAll("label[for='fram5']");
+             /*let ugandaPrice = document.getElementsByClassName('uganda');*/
+
+            document.getElementsByClassName('A3Price').innerHTML = "A3 - 200,000 UGX";;
+            document.getElementsByClassName('A3Price').innerText = "A3 - 200,000 UGX";;
+
+            /* document.querySelectorAll("label[for='fram5']").innerHTML = "A3 - 200,000 UGX";
+             document.querySelectorAll("label[for='fram5']").innerText = "A3 - 200,000 UGX"; */
+
+
+        }
+
+
+    </script>
+
+
+
+    <!--form-validation script-->
+    <script>
+        var nameError = document.getElementById('name-error');
+        var messageError = document.getElementById('message-error');
+        var nextError = document.getElementById('next-error');
+        var submitError = document.getElementById('submit-error');
+        var emailError = document.getElementById('email-error');
+
+        function validateName() {
+            var name = document.getElementById('Collector-name').value;
+
+            if (name.length == 0) {
+                nameError.innerHTML = "Name is required.";
+                return false;
+            }
+            if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                nameError.innerHTML = ""; //Space names
+                return true;
+            }
+            nameError.innerHTML = '<i class="fas fa-check-circle"></i>';
+            return true;
+
+
+        }
+
+        function validateEmail() {
+
+            var email = document.getElementById('Collector-email').value;
+
+            if (email.length == 0) {
+                emailError.innerHTML = "Email is required.";
+                return false;
+            }
+            if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                emailError.style.color = "orange"
+                emailError.innerHTML = "email invalid.";
+                return false;
+            }
+            emailError.innerHTML = '<i class="fas fa-check-circle"></i>';
+            return true;
+
+
+        }
+
+        function validateMessage() {
+
+            var message = document.getElementById('Collector-message').value;
+            //var required = 50;
+            var required = 1;
+            var left = required - message.length;
+
+            if (message.length == 0) {
+                messageError.innerHTML = "Message required";
+                return false
+            }/*if (message.length < 10) {
+                messageError.style.color = "red"
+                messageError.innerHTML = "It would help if you gave a longer description";
+                return false
+            }
+            if (message.length < 20) {
+                messageError.style.color = "orange"
+                messageError.innerHTML = "Short";
+                return false
+            }
+            if (message.length < required) {
+                messageError.style.color = "orange"
+                messageError.innerHTML = "It would help if you gave a description";
+                return false
+            }*/
+            messageError.innerHTML = '<i class="fas fa-check-circle"></i>';
+            return true
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="./HDSlider-main/script.js"></script>
+
+
+
+    <script src="./darkmode.js"></script>
+
+    <script>
+        HDS("#slider");
+    </script>
+
+
+    <!--Frequentl Asked Questions Script-->
+    <script>
+        let toggles = document.getElementsByClassName('question-toggle');
+        let contentDiv = document.getElementsByClassName('question-content');
+        let icons = document.getElementsByClassName('icon');
+
+
+        for (let i = 0; i < toggles.length; i++) {
+            toggles[i].addEventListener('click', () => {
+                if (parseInt(contentDiv[i].style.height)
+                    != contentDiv[i].scrollHeight) {
+                    contentDiv[i].style.height =
+                        contentDiv[i].scrollHeight + "px";
+                    /* toggles[i].style.color = "var(--red-color)";
+                     /* icons[i].classList.remove('fa-plus'); */
+                    icons[i].style.transform = "rotate(-90deg)"; //no effect
+
+                    /* icons[i].classList.add('fa-minus'); */
+                }
+                else {
+                    contentDiv[i].style.height = "0px";
+                    toggles[i].style.color = "var(--headerscolor)";
+                    /*  icons[i].classList.remove('fa-minus');
+                      icons[i].classList.add('fa-plus');*/
+
+                }
+                for (let j = 0; j < contentDiv.length; j++) {
+                    if (j !== i) {
+                        contentDiv[j].style.height = "0px";
+                        toggles[j].style.color = "var(--headerscolor)";
+                        /*  icons[j].classList.remove('fa-minus');
+                          icons[j].classList.add('fa-plus'); */
+                        icons[i].style.transform = "rotate(90deg)"; //works
+
+                    }
+                }
+            });
+        }
+
+
+    </script>
+
+
+    <script>
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+                scrollProgress.style.right = "";
+            } else {
+                scrollProgress.style.display = "none";
+                scrollProgress.style.right = "-4rem";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#000 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+        };
+
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+
+
+
+
+
+    <script>
+        const modalViews = document.querySelectorAll('.services__modal'),
+            modalBtns = document.querySelectorAll('.services__button'),
+
+            modal3Btns = document.querySelectorAll('.services__button3'),
+            modalCloses = document.querySelectorAll('.services__modal-close'),
+            modal99Btns = document.querySelectorAll('.services__button99')
+
+        let modal = function (modalClick) {
+            modalViews[modalClick].classList.add('active-modal')
+        }
+
+        modalBtns.forEach((modalBtn, i) => {
+            modalBtn.addEventListener('click', () => {
+                modal(i)
+            })
+        })
+        modal3Btns.forEach((modal3Btn, i) => {
+            modal3Btn.addEventListener('click', () => {
+                modal(i)
+            })
+        })
+        modal99Btns.forEach((modal99Btn, i) => {
+            modal99Btn.addEventListener('click', () => {
+                modal(i)
+            })
+        })
+        modalCloses.forEach((modalClose) => {
+            modalClose.addEventListener('click', () => {
+                modalViews.forEach((modalView) => {
+                    modalView.classList.remove('active-modal')
+                })
+            })
+        })
+
+    </script>
+
+
+
+
+
+    <!-- Swiper JavaScript -->
+    <script src="assets/swiper-bundle.min.js"></script>
+
+
+
+    <!-- Which Radio Button Is Selected-->
+    <script>
+        let sizePrices = document.querySelectorAll("input[name='Size-Price']");
+        let frameStyles = document.querySelectorAll("input[name='framing-style']");
+        let artStyles = document.querySelectorAll("input[name='art-style']");
+        //-> SelectorAll - Lest bug
+
+
+
+
+
+        let findsizeSelected = () => {
+            let sizeSelected = document.querySelector("input[name='Size-Price']:checked").value;
+            //Had to be selector not selectorAll - lestbug
+
+            console.log(sizeSelected);
+        }
+
+
+
+        let findframeSelected = () => {
+            let frameSelected = document.querySelector("input[name='framing-style']:checked").value;
+            //Had to be selector not selectorAll - lestbug
+
+            console.log(frameSelected);
+
+        }
+        let findstyleSelected = () => {
+            let artSelected = document.querySelector("input[name='art-style']:checked").value;
+            //Had to be selector not selectorAll - lestbug
+
+            console.log(artSelected);
+        }
+
+
+
+        let findSelected = () => {
+            findsizeSelected();
+            findframeSelected();
+            findstyleSelected();
+
+        }
+
+
+        sizePrices.forEach(sizePrice => {
+            sizePrice.addEventListener("change", findSelected);
+
+
+        });
+
+       // findSelected();
+        // Moved it to be called where submit is pressed.
+
+    </script>
+
+
+
+    <script>
+        function MailOrder() {
+            var parameters = {
+                collectorname: document.getElementById("Collector-name").value,
+                collectoremail: document.getElementById("Collector-email").value,
+
+                collectorphone: document.getElementById("Collector-phone").value,
+                collectormessage: document.getElementById("Collector-message").value,
+                artsize: document.querySelector("input[name='Size-Price']:checked").value,
+                styleframe: document.querySelector("input[name='framing-style']:checked").value,
+                styleart: document.querySelector("input[name='art-style']:checked").value
+            }
+            emailjs.send("service_n7vj3nc", "template_prwm9ew", parameters).then(function (res) {
+                console.log("Success!!" + res.status); /* alert - Helps know which is working*/
+            })
+        }
+    </script>
+
+
+    <script>
+        function SubscribeMail() {
+            var parameters = {
+                subscriberemail: document.getElementById("subscriber-email").value,
+            }
+            emailjs.send("service_n7vj3nc", "template_prwm9ew", parameters).then(function (res) {
+                alert("Subscription Successful.");
+            })
+            document.getElementById("subscriber-email").value = "";
+        }
+    </script>
+
+
+
+
+    <!--//Make order Script -->
+    <script>
+        var mkbutton = document.getElementById("MakeOrder");
+        var mkbutton2 = document.getElementById("MakeOrder2");
+
+        var Form1 = document.getElementById("Form1");
+        var Form2 = document.getElementById("Form2");
+
+        var Next1 = document.getElementById("next1");
+        var Back1 = document.getElementById("back1");
+
+        var Submit1 = document.getElementById("submit1");
+
+
+
+        var stepsProgress = document.getElementById("zprogress");
+
+        mkbutton.onclick = function () {
+            Form1.style.left = "8%";
+            Form2.style.left = "450px";
+            stepsProgress.style.width = "50%"
+
+        }
+        mkbutton2.onclick = function () {
+            Form1.style.left = "8%";
+            Form2.style.left = "450px";
+            stepsProgress.style.width = "50%"
+
+        }
+        Next1.onclick = function () {
+            //Prevents the next form from appearing until validation for inputs is carried out
+            /* if (!validateName() || !validateEmail() || !validateMessage()) {
+                    nextError.style.display = 'block';
+                    nextError.innerHTML = "Please fix errors to proceed.";
+                    setTimeout(function(){nextError.style.display = 'none';}, 3000);
+                    return false;
+                }*/
+            Form1.style.left = "-450px";
+            Form2.style.left = "8%";
+            stepsProgress.style.width = "100%"
+        }
+        Back1.onclick = function () {
+            Form1.style.left = "8%";
+            Form2.style.left = "450px";
+            stepsProgress.style.width = "50%"
+        }
+
+        Submit1.addEventListener("click", function () {
+
+
+
+            if (!validateName() || !validateEmail() || !validateMessage()) {
+                submitError.style.display = 'block';
+                submitError.innerHTML = "please fix parts of step 1 to submit";
+                setTimeout(function () { submitError.style.display = 'none'; }, 3000);
+
+                return false;
+            }
+
+            modalViews.forEach((modalView) => {
+                modalView.classList.remove('active-modal')
+            })
+
+            findSelected();
+            MailOrder();
+
+
+            setTimeout(function () {
+                findSelected();
+                alert("You successfully placed an order. We will be in touch within 48 hours. Thank you");
+            }, 500)
+        });
+    </script>
+
+
+    <script>
+        //Get all dropdowns from the document
+        const dropdowns = document.querySelectorAll('.price-dropdown');
+
+        //Loop through all drop down elements
+        dropdowns.forEach(dropdown => {
+            //Get inner elements from each dropdown
+            const select = dropdown.querySelector('.price-select');
+            const caret = dropdown.querySelector('.price-caret');
+            const menu = dropdown.querySelector('.price-menu');
+            const options = dropdown.querySelectorAll('.price-menu li');
+            const sselected = dropdown.querySelector('.price-selected');
+
+            /* We are using this method in order to have 
+            mutliple dropdown menus on page wprk */
+
+            //Add a click event to the select element
+            select.addEventListener('click', () => {
+                //Add the clicked select styles to the select element
+                select.classList.toggle('price-select-clicked');
+                //Add the rotate styles to the caret element
+                caret.classList.toggle('price-caret-rotate');
+                //Add the open styles to the new element
+                menu.classList.toggle('price-menu-open');
+            });
+
+            //Loop through all option elements
+            options.forEach(option => {
+                //Add a click event to the option element
+                option.addEventListener('click', () => {
+                    //Change selected inner text to clicked option
+                    sselected.innerText = option.innerText;
+                    //Add the clicked select styles to the select element
+                    select.classList.remove('price-select-clicked');
+                    //Add the rotate styles to the caret element
+                    caret.classList.remove('price-caret-rotate');
+                    //Add the open styles to the menu element
+                    menu.classList.remove('price-menu-open');
+                    //Remove active class from all option elements
+                    options.forEach(option => {
+                        option.classList.remove('price-active');
+                    });
+                    //Add active class to clicked option element
+                    option.classList.add('price-active');
+                });
+            });
+        });
+
+    </script>
+    <script src="./main_script.js"></script>
+
+
+
+
+</body>
+
+</html>

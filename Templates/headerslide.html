@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Slide</title>
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Link Swiper's CSS -->
+    <!--<link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+   /> -->
+
+    <!-- Demo styles -->
+    <style>
+      /*html,
+     body {
+       position: relative;
+       height: 100%;
+     }
+
+     body {
+       background: #eee;
+       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+       font-size: 14px;
+       color: #000;
+       margin: 0;
+       padding: 0;
+     }*/
+      /*
+     .swiper {
+       width: 100%;
+       height: 100%;
+     }*/
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      /* .swiper-slide img {
+       display: block;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+     }*/
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="image swiper-slide">
+          <img src="./assets/images/portrait-first" alt="" srcset="" />
+          <div class="image-info">
+            <a class="price-link">A3 Size - UGX.250,000 UGX</a>
+            <a class="price-link">A2 Size - UGX.400,000 UGX</a>
+            <a class="price-link">A1 Size - UGX.500,000 UGX</a>
+          </div>
+        </div>
+        <div class="image swiper-slide">
+          <img src="./assets/images/portrait-natasha.jpg" alt="" srcset="" />
+          <div class="image-info">
+            <a class="price-link">A3 Size - UGX.250,000 UGX</a>
+            <a class="price-link">A2 Size - UGX.400,000 UGX</a>
+            <a class="price-link">A1 Size - UGX.500,000 UGX</a>
+          </div>
+        </div>
+        <div class="image swiper-slide">
+          <img src="./assets/images/portrait-sheila" alt="" srcset="" />
+          <div class="image-info">
+            <a class="price-link">A3 Size - UGX.250,000 UGX</a>
+            <a class="price-link">A2 Size - UGX.400,000 UGX</a>
+            <a class="price-link">A1 Size - UGX.500,000 UGX</a>
+          </div>
+        </div>
+        <div class="image swiper-slide">
+          <img src="./assets/images/portrait-shivan" alt="" srcset="" />
+          <div class="image-info">
+            <a class="price-link">A3 Size - UGX.250,000 UGX</a>
+            <a class="price-link">A2 Size - UGX.400,000 UGX</a>
+            <a class="price-link">A1 Size - UGX.500,000 UGX</a>
+          </div>
+        </div>
+        <!-- <div class="swiper-slide">Slide 9</div>-->
+      </div>
+
+      <svg
+        class="swiper-button-next"
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="15"
+          cy="15"
+          r="14.75"
+          fill="#FFFDFA"
+          fill-opacity="0.05"
+          stroke="#3E1701"
+          stroke-width="0.5"
+        />
+        <path
+          d="M19 14.5L13.8674 20.0603C13.5587 20.3948 13 20.1763 13 19.7212L13 14.5L13 10.1366C13 9.70157 13.5172 9.47407 13.8379 9.76804L19 14.5Z"
+          fill="#3E1701"
+        />
+        <path
+          d="M13 14.5L19 14.5M19 14.5L13.8674 20.0603C13.5587 20.3948 13 20.1763 13 19.7212L13 10.1366C13 9.70157 13.5172 9.47407 13.8379 9.76804L19 14.5Z"
+          stroke="#3E1701"
+        />
+      </svg>
+      <svg
+        class="swiper-button-prev"
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="15"
+          cy="15"
+          r="14.75"
+          transform="rotate(-180 15 15)"
+          fill="#FFFDFA"
+          fill-opacity="0.05"
+          stroke="#3E1701"
+          stroke-width="0.5"
+        />
+        <path
+          d="M11 15.5L16.1326 9.93968C16.4413 9.60524 17 9.82367 17 10.2788L17 15.5L17 19.8634C17 20.2984 16.4828 20.5259 16.1621 20.232L11 15.5Z"
+          fill="#3E1701"
+        />
+        <path
+          d="M17 15.5L11 15.5M11 15.5L16.1326 9.93968C16.4413 9.60524 17 9.82367 17 10.2788L17 19.8634C17 20.2984 16.4828 20.5259 16.1621 20.232L11 15.5Z"
+          stroke="#3E1701"
+        />
+      </svg>
+    </div>
+
+    <!-- Swiper JS -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        //Default-Parameters
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        /*pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },*/
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

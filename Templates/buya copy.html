@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <!--Main Styling-->
+    <!--<script src="./main_script.js"></script> -->
+    <!--Main Javascript-->
+    <link rel="stylesheet" href="./assets/fonts/css/all.css" />
+    <!-- Icons only -->
+    <link rel="stylesheet" href="./assets/swiper-bundle.min.css" />
+    <title>Shop Buya-Art</title>
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <nav class="buya__nav">
+      <a href="#">Buya <span style="color: var(--red-color)"> Art</span></a>
+      <ul class="buya__nav_list" id="nav-menu">
+        <i class="fa fa-times nav__close" id="nav-close"></i>
+        <li>
+          <a href="./about.html" class="nav__link" onclick="changeNav(0)"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav__link" onclick="changeNav(1)">Art Shop</a>
+        </li>
+        <li>
+          <a href="./gallery.html" class="nav__link" onclick="changeNav(2)"
+            >Gallery</a
+          >
+        </li>
+        <!--<li><a href="#" target="_blank"  class="nav__link">Downloads</a></li>-->
+        <li>
+          <a href="./blog.html" class="nav__link" onclick="changeNav(3)"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav__link" onclick="changeNav(4)">Contact</a>
+        </li>
+      </ul>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+
+    <section class="nfts" id="nfts">
+      <div class="headings">
+        <h2 class="heading" style="color: var(--red-color)">
+          Gift<span> Your Family</span>
+        </h2>
+        <h2 class="heading2 heading" style="font-size: 16px; color: #6c6b6b">
+          Art That Lasts
+          <span style="color: #6c6b6b">Generations </span>
+        </h2>
+      </div>
+
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="product-card swiper-slide"></div>
+            <div class="product-card swiper-slide"></div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Money-Shot Page-->
+    <section class="home__section section">
+      <div class="container_button">
+        <div class="slide-container swiper">
+          <svg
+            class="swiper-button-prev swiper-navBtn"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="15"
+              cy="15"
+              r="14.75"
+              transform="rotate(-180 15 15)"
+              fill="#FFFDFA"
+              fill-opacity="0.05"
+              stroke="#3E1701"
+              stroke-width="0.5"
+            />
+            <path
+              d="M11 15.5L16.1326 9.93968C16.4413 9.60524 17 9.82367 17 10.2788L17 15.5L17 19.8634C17 20.2984 16.4828 20.5259 16.1621 20.232L11 15.5Z"
+              fill="#3E1701"
+            />
+            <path
+              d="M17 15.5L11 15.5M11 15.5L16.1326 9.93968C16.4413 9.60524 17 9.82367 17 10.2788L17 19.8634C17 20.2984 16.4828 20.5259 16.1621 20.232L11 15.5Z"
+              stroke="#3E1701"
+            />
+          </svg>
+
+          <div class="try-container">
+            <div class="images-container swiper-wrapper">
+              <div class="image swiper-slide" style="width: 300px">
+                <img src="./assets/images/portrait-first" alt="" srcset="" />
+                <div class="image-info">
+                  <a class="price-link">A3 Size - UGX.250,000 UGX</a>
+                  <a class="price-link">A2 Size - UGX.400,000 UGX</a>
+                  <a class="price-link">A1 Size - UGX.500,000 UGX</a>
+                </div>
+              </div>
+              <div class="image swiper-slide" style="width: 300px">
+                <img
+                  src="./assets/images/portrait-natasha.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="image-info">
+                  <a class="price-link">A3 Size - UGX.250,000 UGX</a>
+                  <a class="price-link">A2 Size - UGX.400,000 UGX</a>
+                  <a class="price-link">A1 Size - UGX.500,000 UGX</a>
+                </div>
+              </div>
+              <div class="image swiper-slide" style="width: 300px">
+                <img src="./assets/images/portrait-sheila" alt="" srcset="" />
+                <div class="image-info">
+                  <a class="price-link">A3 Size - UGX.250,000 UGX</a>
+                  <a class="price-link">A2 Size - UGX.400,000 UGX</a>
+                  <a class="price-link">A1 Size - UGX.500,000 UGX</a>
+                </div>
+              </div>
+              <div class="image swiper-slide" style="width: 300px">
+                <img src="./assets/images/portrait-shivan" alt="" srcset="" />
+                <div class="image-info">
+                  <a class="price-link">A3 Size - UGX.250,000 UGX</a>
+                  <a class="price-link">A2 Size - UGX.400,000 UGX</a>
+                  <a class="price-link">A1 Size - UGX.500,000 UGX</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <svg
+            class="swiper-button-next swiper-navBtn"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="15"
+              cy="15"
+              r="14.75"
+              fill="#FFFDFA"
+              fill-opacity="0.05"
+              stroke="#3E1701"
+              stroke-width="0.5"
+            />
+            <path
+              d="M19 14.5L13.8674 20.0603C13.5587 20.3948 13 20.1763 13 19.7212L13 14.5L13 10.1366C13 9.70157 13.5172 9.47407 13.8379 9.76804L19 14.5Z"
+              fill="#3E1701"
+            />
+            <path
+              d="M13 14.5L19 14.5M19 14.5L13.8674 20.0603C13.5587 20.3948 13 20.1763 13 19.7212L13 10.1366C13 9.70157 13.5172 9.47407 13.8379 9.76804L19 14.5Z"
+              stroke="#3E1701"
+            />
+          </svg>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="button-container">
+          <div class="swipe-down-box">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href="#" class="button">Get Yourself One</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home__gallery__section section">
+      <div class="words-button">
+        <h2 class="home-shop-title title">
+          Art<span style="color: #2f2f2f"> Gallery</span>
+        </h2>
+        <p class="describe">
+          The gallery acts as a digital exhibition of Buya Art. You will find
+          paintings, pencil, and surreal artwork, which is accompanied with a
+          blog at-times. The Gallery is updated weekly, with each new work
+          available as a collectible on Open Sea & Foundation
+        </p>
+
+        <div class="button-container2">
+          <a href="./gallery.html" class="button">View Gallery</a>
+        </div>
+      </div>
+
+      <div class="gallery-snippet-container">
+        <div class="gallery-showcase">
+          <img
+            src="./assets/images/depress"
+            alt=""
+            srcset=""
+            data-content
+            id="gallery-main"
+          />
+          <p class="home_gallery_caption" id="captiongallery">
+            DEPRESSION [2022]
+          </p>
+        </div>
+        <div class="showcase-option">
+          <div
+            href="#"
+            class="gallery-small-image g1"
+            data-target="#art01"
+            onclick="changeImageg1()"
+          ></div>
+          <div
+            href="#"
+            class="gallery-small-image g2"
+            data-target="#art02"
+            onclick="changeImageg2()"
+          ></div>
+          <div
+            href="#"
+            class="gallery-small-image g3"
+            data-target="#art03"
+            onclick="changeImageg3()"
+          ></div>
+          <div
+            href="#"
+            class="gallery-small-image g4"
+            data-target="#art04"
+            onclick="changeImageg4()"
+          ></div>
+          <div
+            href="#"
+            class="gallery-small-image g5"
+            data-target="#art05"
+            onclick="changeImageg5()"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="button-container3 galery-belowbtn">
+      <a href="./gallery.html" class="button">View Gallery</a>
+    </div>
+
+    <section class="home__shop__section section">
+      <div class="home-shop-describe">
+        <h2 class="home-shop-title title">
+          Art<span style="color: #2f2f2f"> Store</span>
+        </h2>
+        <p class="describe">
+          We all want the best for our loved ones and ourselves. Well, look no
+          further as we bring you a range of products to choose from when
+          gifting those you care about.
+          <!--The Store consists of art products ranging from
+                 apparell, phone cases to wall art. Please check them out and get the best 
+                 gift for yourself or your loved one.-->
+        </p>
+      </div>
+
+      <div class="product-collection">
+        <div class="container">
+          <div class="product-collection-wrapper">
+            <!--Product Col Left-->
+            <div class="product-col-left flex">
+              <div class="shade"></div>
+              <div class="product-col-content">
+                <h2 class="sm-title">Wall Art</h2>
+                <h2 class="md-title">Extra 10% Off</h2>
+                <!--<p class="text-light">Lorem ipsum dolor sit
+                                 amet consectetur, adipisicing elit. Sit a molestiae
+                                  aspernatur porro officiis doloremque excepturi 
+                                  cumque optio eveniet harum labore tenetur eaque 
+                                  modi dignissimos similique, perferendis pariatur 
+                                  consequatur earum!
+                            </p>-->
+                <button class="btn-dark" type="button">Shop Now</button>
+              </div>
+            </div>
+
+            <!--Product Col Left-->
+            <div class="product-col-right">
+              <div class="product-col-r-top flex">
+                <div class="shade"></div>
+                <div class="product-col-content">
+                  <h2 class="sm-title">Digital Collectibles</h2>
+                  <h2 class="md-title">With Bonus Merchandise</h2>
+                  <button class="btn-dark" type="button">Shop Now</button>
+                </div>
+              </div>
+
+              <div class="product-col-r-bottom">
+                <!--Left-->
+                <div class="flex">
+                  <div class="shade"></div>
+                  <div class="product-col-content">
+                    <h2 class="sm-title">Apparell</h2>
+                    <h2 class="md-title">T-Shirt Collection</h2>
+                    <!--<p class="text-light">Lorem ipsum </p>-->
+                    <button class="btn-dark" type="button">Shop Now</button>
+                  </div>
+                </div>
+                <!--Right-->
+                <div class="flex">
+                  <div class="shade"></div>
+                  <div class="product-col-content">
+                    <h2 class="sm-title">Phone Cases</h2>
+                    <h2 class="md-title">Customisable</h2>
+                    <!--<p class="text-light">Lorem ipsum </p>-->
+                    <button class="btn-dark" type="button">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-container2">
+        <a href="#" class="button">Go To Store</a>
+      </div>
+    </section>
+
+    <div id="progress">
+      <span id="progress-value"
+        ><img src="./assets/svgs/backtotop" alt="" srcset=""
+      /></span>
+    </div>
+
+    <script>
+      let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+
+        if (pos > 100) {
+          scrollProgress.style.display = "grid";
+          scrollProgress.style.right = "";
+        } else {
+          scrollProgress.style.display = "none";
+          scrollProgress.style.right = "-4rem";
+        }
+        scrollProgress.addEventListener("click", () => {
+          document.documentElement.scrollTop = 0;
+        });
+        scrollProgress.style.background = `conic-gradient(#000 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+      };
+
+      window.onscroll = calcScrollValue;
+      window.onload = calcScrollValue;
+    </script>
+
+    <script src="./main_script.js"></script>
+    <!--Main Javascript works when put below and not above.-->
+
+    <!-- Swiper JavaScript -->
+    <script src="./assets/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".slide-content", {
+        //.slide-content
+        //slidesPerView: 1,
+        //spaceBetween: 25,
+        loop: true,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: "true",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

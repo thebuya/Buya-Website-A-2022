@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style.css">
+    <!--Main Styling-->
+    <!--<script src="./main_script.js"></script> -->
+    <!--Main Javascript-->
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("G8mh0ombjCTxwWsiV");
+        })();
+    </script>
+    <link rel="stylesheet" href="../assets/fonts/css/all.css"> <!-- Icons only -->
+    <title>Buya-Blog</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP84J19V31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FP84J19V31');
+    </script>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="buya__nav">
+        <a href="../index.html">Home<span style="color: var(--red-color);">.</span></a>
+        <ul class="buya__nav_list" id="nav-menu">
+            <i class="fa fa-times nav__close" id="nav-close"></i>
+            <li><a href="../about.html" class="nav__link" onclick="changeNav(0)">About</a></li>
+            <li><a href="../product.html" class="nav__link" onclick="changeNav(1)">Art Shop</a></li>
+            <li><a href="../gallery.html" class="nav__link" onclick="changeNav(2)">Gallery</a></li>
+            <li><a href="../blog.html" class="nav__link" onclick="changeNav(3)"
+                    style="color: var(--red-color);">Blog</a></li>
+            <li><a href="https://wa.me/256783909668" class="nav__link" id="contact-btn" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa fa-moon moon change-theme" id="theme-button" aria-hidden="true">
+                    </i>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="small-dark">
+            <i class="fa fa-moon moon change-theme" id="ztheme-button" aria-hidden="true">
+            </i>
+        </a>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+
+
+    <section class="Temp-1 post-container  postTemp ">
+        <div class="content-1">
+            <div class="image-1">
+                <video width="100%" controls autoplay>
+                    <source src="../assets/Videos/suicidal-view.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="text-1">
+                <h2 class="post-title" style="@media screen and (max-width: 650px)
+                {
+                font-size: 36px;
+                 }"><br> A Suicidal Perspective
+                </h2>
+
+
+                <p class="post-cont1">
+                    To all my mates, I am filled with the I could die drug.
+                    And I just want to say I love you, and most notably,
+                    You’re a pussy if you’re still alive, and I am not, lol 😅😂.
+                    I will fuckin’ miss you,
+                    and I hope you will miss me too.
+                    <br><br>
+                    And for you who will have gone before me,
+                    … but we don’t know it, yet.
+                    I will cry for you, not necessarily by choice,
+                    but my heart is heavier than my mind.
+                    <br><br>
+                    Please find below some quotes on the topic from famous people
+                </p>
+
+                <div class="post-text-container">
+
+                    <p class="post-text" style="text-align: center; width: 100%; padding-top: 1rem;">
+                        Thank you for your read.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="signupLetter" style="margin-top: 2.5rem;">
+            <div class="headingLetter">
+                <h3 class="headLetter">
+                    Our NewsLetter
+                </h3>
+                <h5 class="offer-Letter">
+                    <!--🔖-->
+                    Join to get early discounts & bonus art content.
+                </h5>
+            </div>
+
+            <div class="inputbutton-Letter">
+                <div class="inputBox">
+                    <input type="text" id="subscriber-email" required="required">
+                    <span>Email address</span>
+                    <i></i>
+                </div>
+                <a onclick="SubscribeMail()">
+                    Join newsletter
+                </a>
+            </div>
+        </div>
+
+        <a href="../blog.html" class="backblog">
+            <p>Back To Blogs</p>
+        </a>
+
+    </section>
+
+    <footer class="footer">
+        <h4 class="footer-header">Quick-Links</h4>
+        <div class="footer-lists">
+            <ul class="footer-links">
+                <li class="footer-link">
+                    <a href="../index.html#aboveorder" class="footer-a">
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                        Order Portrait</a>
+                </li>
+                <li class="footer-link">
+                    <a href="../product.html" class="footer-a">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        Art Shop</a>
+                </li>
+                <li class="footer-link">
+
+                    <a href="../about.html#collectorsReviews" class="footer-a">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                        Collectors Reviews</a>
+                </li>
+            </ul>
+
+            <ul class="footer-links">
+                <li class="footer-link">
+                    <a href="../gallery.html#latestartwork" class="footer-a">
+                        <i class="fa fa-file-image" aria-hidden="true"></i>
+                        Art-Gallery</a>
+                </li>
+                <li class="footer-link">
+                    <a href="../about.html#pricing" class="footer-a">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                        Services</a>
+                </li>
+                <li class="footer-link">
+                    <a href="../about.html#questionssection" class="footer-a">
+                        <i class="fa fa-tags" aria-hidden="true"></i>
+                        Questions</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contactlinks">
+            <div class="footer-email-numbers">
+                <a href="mailto: info@artbybuya.com" target="_blank">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    info@artbybuya.com
+                </a>
+                <a href="tel:+256783-909-668" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 783-909668 🇺🇬
+                </a>
+                <a href="tel:+256753-620-788" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 753-620788 🇺🇬
+                </a>
+                <a href="tel:+256753-620-788" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 753-620788 🇺🇬
+                </a>
+            </div>
+
+            <ul class="footer-social-icons">
+                <li class="footer-icon">
+                    <a href="https://twitter.com/ich_bin_buya" target="_blank" class="footer-i">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="https://wa.me/256783909668" target="_blank" class="footer-i">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                </li>
+                <li class="footer-icon">
+                    <a target="_blank" href="https://www.instagram.com/the_buya/" class="footer-i">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="footer-caption">
+                Site Architect:<a href="../index.html" target="_blank"> Buya</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <div id="progress">
+        <span id="progress-value"><img src="../assets/svgs/backtotop" alt="" srcset=""></span>
+    </div>
+
+
+
+
+
+
+
+    <script src="../darkmode.js"></script>
+    <script>
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+                scrollProgress.style.right = "";
+            } else {
+                scrollProgress.style.display = "none";
+                scrollProgress.style.right = "-4rem";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#000 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+        };
+
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+
+
+    <!-- Which Radio Button Is Selected-->
+    <script>
+        let sizePrices = document.querySelectorAll("input[name='Size-Price']");
+        let frameStyles = document.querySelectorAll("input[name='framing-style']");
+        let artStyles = document.querySelectorAll("input[name='art-style']");
+        //-> SelectorAll - Lest bug
+
+
+
+
+
+        let findsizeSelected = () => {
+            let sizeSelected = document.querySelector("input[name='Size-Price']:checked").value;
+            //Had to be selector not selectorAll - lestbug
+
+            console.log(sizeSelected);
+        }
+
+
+
+        let findframeSelected = () => {
+            let frameSelected = document.querySelector("input[name='framing-style']:checked").value;
+            //Had to be selector not selectorAll - lestbug
+
+            console.log(frameSelected);
+
+        }
+        let findstyleSelected = () => {
+            let artSelected = document.querySelector("input[name='art-style']:checked").value;
+            //Had to be selector not selectorAll - lestbug
+
+            console.log(artSelected);
+        }
+
+
+
+        let findSelected = () => {
+            findsizeSelected();
+            findframeSelected();
+            findstyleSelected();
+
+        }
+
+
+        sizePrices.forEach(sizePrice => {
+            sizePrice.addEventListener("change", findSelected);
+
+
+        });
+
+        findSelected();
+
+    </script>
+
+
+
+    <!--Sending-MailOrder-Script-->
+    <script>
+        function MailOrder() {
+            var parameters = {
+                collectorname: document.getElementById("Collector-name").value,
+                collectoremail: document.getElementById("Collector-email").value,
+                collectorphone: document.getElementById("Collector-phone").value,
+                collectormessage: document.getElementById("Collector-message").value,
+                artsize: document.querySelector("input[name='Size-Price']:checked").value,
+                styleframe: document.querySelector("input[name='framing-style']:checked").value,
+                styleart: document.querySelector("input[name='art-style']:checked").value
+            }
+            emailjs.send("service_n7vj3nc", "template_prwm9ew", parameters).then(function (res) {
+                console.log("Success!!" + res.status); /* alert - Helps know which is working*/
+            })
+        }
+    </script>
+
+
+
+    <!--Subscribing-Mail-Script-->
+    <script>
+        function SubscribeMail() {
+            var parameters = {
+                subscriberemail: document.getElementById("subscriber-email").value,
+            }
+            emailjs.send("service_n7vj3nc", "template_prwm9ew", parameters).then(function (res) {
+                alert("Subscription Successful.");
+
+            })
+            document.getElementById("subscriber-email").value = "";
+
+
+        }
+    </script>
+
+
+
+
+
+    <!--//Make order Script -->
+    <script>
+
+        var mkbutton = document.getElementById("MakeOrder");
+
+        var Form1 = document.getElementById("Form1");
+        var Form2 = document.getElementById("Form2");
+
+        var Next1 = document.getElementById("next1");
+        var Back1 = document.getElementById("back1");
+
+
+
+        var Submit1 = document.getElementById("submit1");
+
+        var stepsProgress = document.getElementById("zprogress");
+
+
+
+
+
+
+
+
+
+        mkbutton.onclick = function () {
+            Form1.style.left = "8%";
+            Form2.style.left = "450px";
+            stepsProgress.style.width = "50%"
+
+        }
+
+        Next1.onclick = function () {
+            //Prevents the next form from appearing until validation for inputs is carried out
+            /* if (!validateName() || !validateEmail() || !validateMessage()) {
+                 nextError.style.display = 'block';
+                 nextError.innerHTML = "Please fix errors to proceed.";
+                 setTimeout(function(){nextError.style.display = 'none';}, 3000);
+                 return false;
+             }*/
+            Form1.style.left = "-450px";
+            Form2.style.left = "8%";
+            stepsProgress.style.width = "100%"
+        }
+        Back1.onclick = function () {
+            Form1.style.left = "8%";
+            Form2.style.left = "450px";
+            stepsProgress.style.width = "50%"
+        }
+
+
+
+
+        Submit1.addEventListener("click", function () {
+            if (!validateName() || !validateEmail() || !validateMessage()) {
+                submitError.style.display = 'block';
+                submitError.innerHTML = "please fix parts of step 1 to submit";
+                setTimeout(function () { submitError.style.display = 'none'; }, 3000);
+
+                return false;
+            }
+
+
+            modalViews.forEach((modalView) => {
+                modalView.classList.remove('active-modal')
+            })
+
+            MailOrder();
+
+            setTimeout(function () {
+                findSelected();
+                alert("You successfully placed an order. We will be in touch within 48 hours. Thank you");
+            }, 500)
+        });
+    </script>
+
+
+    <script src="../main_script.js"></script>
+</body>
+
+</html>

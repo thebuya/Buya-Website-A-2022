@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--For Facebook & Whatsapp -->
+    <!-- Site Name, Title, and Description To Be Displayed -->
+    <meta property="og:site_name" content="Buya Art">
+    <meta property="og:title" content="GTurning Memories Into Art For More Than Half A Decade.">
+    <meta property="og:title" name="twitter:t" itle" itemprop="name" content="Gift Your Family">
+    <meta property="og:description" content="Gift Your Loved Ones Art">
+    <meta property="og:description" name="twitter:description" itemprop="description"
+        content="Turning Memories Into Art For More Than Half A Decade.">
+
+
+    <!-- Image to Display -->
+    <meta property="og:image" itemprop="image" content="./preview.png">
+    <meta property="og:image" name="twitter:image:src" itemprop="image" content="./preview.png">
+    <!--For Microsoft Apps -->
+    <meta name="msapplication-TileImage" content="./preview.png">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Any Size upto 300. Above 300px will not wok in whatsapp -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <!-- Website to visit when clicked in Facebook or Whatsapp-->
+    <meta property="og:url" content="https://artbybuya.com">
+
+    <meta name="twitter:card" content="Choose Art">
+    <meta property="og:image:alt" name="twitter:image:alt"
+        content="Gift Your Family Art. Turning memories into art for over half a decade.">
+
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon2.ico" />
+    <link rel="icon" href="./favicon2.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- UNI-Icons only -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!--Main Styling-->
+    <!--<script src="./main_script.js"></script> -->
+    <!--Main Javascript-->
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/fonts/css/all.css"> <!-- Icons only -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("G8mh0ombjCTxwWsiV");
+        })();
+    </script>
+    <title>Blog</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP84J19V31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FP84J19V31');
+    </script>
+    <style>
+        .dark-theme .active-link{
+            color: #fff;
+        }
+</style>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="buya__nav">
+        <a href="./index.html">Home<span style="color: var(--red-color);"></span></a>
+        <ul class="buya__nav_list" id="nav-menu">
+            <i class="fa fa-times nav__close" id="nav-close"></i>
+            <li><a href="./about.html" class="nav__link" onclick="changeNav(0)">About</a></li>
+            <li><a href="./product.html" class="nav__link" onclick="changeNav(1)">Art Shop</a></li>
+            <li><a href="./gallery.html" class="nav__link" onclick="changeNav(2)">Gallery</a></li>
+            <li><a href="#" class="nav__link active-link" onclick="changeNav(3)">Blog</a></li>
+            <li><a href="https://wa.me/256783909668" class="nav__link" id="contact-btn" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa fa-moon moon change-theme" id="theme-button" aria-hidden="true">
+                    </i>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="small-dark">
+            <i class="fa fa-moon moon change-theme" id="ztheme-button" aria-hidden="true">
+            </i>
+        </a>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+
+
+    <section class="blog-section">
+
+        <ul class="blog-tab">
+            <li class="tab" onclick="showPanel(0,'#33C4E3')">
+                <!--<a href="" class="design blog-link " data-target='#design-blog'>Design</a>-->
+                <a href="" class="design blog-link ">
+                    <input type="radio" id="tabdesign" name="mytabs" checked="checked">
+                    <label for="tabdesign">Design</label>
+                </a>
+
+            </li>
+            <li class="tab" onclick="showPanel(1,'#AB6B17')">
+                <a href="" class="books blog-link ">
+                    <input type="radio" id="tabbookreviews" name="mytabs" checked="checked">
+                    <label for="tabbookreviews">Book Notes</label>
+                </a>
+            </li>
+            <li class="tab" onclick="showPanel(2,'#000')">
+                <a href="" class="fitness blog-link ">
+                    <input type="radio" id="tabfitness" name="mytabs" checked="checked">
+                    <label for="tabfitness">Fitness</label>
+                </a>
+            </li>
+            <li class="tab" onclick="showPanel(3,'#4B4B4B')">
+                <a href="" class="art&life blog-link ">
+                    <input type="radio" id="tabart&life" name="mytabs" checked="checked">
+                    <label for="tabart&life">My Life</label>
+                </a>
+            </li>
+        </ul>
+
+
+        <!--Design Blog-->
+        <div class="blog-container design-container" id="design-blog">
+            <p class="blog-quote">
+                “If you <span>work on something a little bit every day</span> ,
+                you end up with something that is epic.”
+            </p>
+            <div class="book-previews">
+                <div class="book-option">
+                    <a href="./posts-code/FDA0.html" class="book-image" id="designblogdao">
+                        <i class=" fa fa-play play-svg"></i>
+                    </a>
+                    <div class="book-summary">
+                        <p class="booktitle">Introducing FactoryDAO</p>
+                        <p class="booksubtitle">
+                            Revolutionizing Collaboration in Africa.
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/FDA0.html" class="btn">Read Proposal</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-option">
+                    <a href="./posts-code/BreakIntoParts.html" class="book-image" id="designblog1"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Design Smarter: Break into Parts</p>
+                        <p class="booksubtitle">
+                            "Design shouldn't be Hard"
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/BreakIntoParts.html" class="btn">Read Blog</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <hr style="    width: 100vw;
+                margin-top: 1rem;">
+
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="designblog2"
+                        style="opacity:0.5;"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Architecture on The Web</p>
+                        <p class="booksubtitle">
+                            <!--     Collaborator: Samuel Mabonga <br> -->
+                <!--     Date: 03th | 08 | 2022 -->
+                                </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Blog Coming
+                                Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="designblog3"
+                        style="opacity:0.5;"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Impact of A Role Model</p>
+                        <p class="booksubtitle">
+                            <!--   Collaborator: ______<br> -->
+                <!--   Date: 03th | 08 | 2022 -->
+                <!--              </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Blog Coming
+                                Soon</a>
+                        </div>
+                    </div>
+                </div>
+            -->
+            </div>
+        </div>
+
+        <!--BookReviews Blog-->
+        <div class="blog-container books-container" id="books-blog">
+            <p class="blog-quote">
+
+                A library of opinions<span> helping you choose your next read</span>.
+            </p>
+
+            <div class="book-previews">
+                <div class="book-option">
+                    <a href="./posts-code/monksoldferrari.html" class="book-image" id="monk"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">The Monk Who Sold His Ferrari</p>
+                        <p class="booksubtitle">
+
+                            Author: Robin Sharma
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/monksoldferrari.html" class="btn">Read Review</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/whonothow.html" class="book-image" id="who-nothow"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Who Not How</p>
+                        <p class="booksubtitle">
+                            Author: Dan Sullivan, with Benjamin Hardy
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/whonothow.html" class="btn">Read Review</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr style="    width: 100vw;
+                margin-top: 1rem;">
+
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="blackswan"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">The Black Swan</p>
+                        <p class="booksubtitle">
+
+                            Author: Nassim Nicholas Taleb
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Summary coming
+                                soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="designisjob"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Design Is A Job</p>
+                        <p class="booksubtitle">
+
+                            Author: Mike Monteiro
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Summary coming
+                                soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+<!--
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="building-story"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Building A Story Brand</p>
+                        <p class="booksubtitle">
+                            <!--Collaboration: Mike <br>
+                            Date: 03th | 08 | 2022-->
+                <!--                            Author: Donald Miller
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Summary
+                                coming soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="courage-dislike"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">The Courage To Be Disliked</p>
+                        <p class="booksubtitle">
+
+                            Author: Ichiro Kishimi & Fumitake Koga
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Summary
+                                coming soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="showWork"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Show Your Work</p>
+                        <p class="booksubtitle">
+
+                            Author: Austin Kleon
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Summary coming
+                                soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="shook"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Shook One</p>
+                        <p class="booksubtitle">
+
+                            Author: Charlamagne Tha God
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Summary coming
+                                soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            -->
+            </div>
+
+        </div>
+
+        <!--Fitness Blog-->
+        <div class="blog-container fitness-container" id="fitness-blog">
+            <p class="blog-quote">
+                “No <span>Mans is Free </span>Who Is Not a Master of His <span>Mind & Body </span>”
+
+            </p>
+            <div class="book-previews">
+
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="gymblog1"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">The Purpose of Cardio</p>
+                        <p class="booksubtitle">
+                            Collaborator: Sheila & Jovia<br>
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.8;">Read Blog</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="gymblog2"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Why We Need Gym Bros</p>
+                        <p class="booksubtitle">
+                            Collaboration: Joseph Niwamanya <br>
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Blog Coming
+                                Soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="gymblog3"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">True Gym Myths</p>
+                        <p class="booksubtitle">
+                            Collaborator: Mike Mwesigwa<br>
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.htmll" class="btn" style="opacity: 0.5;">Blog Coming
+                                Soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="gymblog4"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Life After Gym</p>
+                        <p class="booksubtitle">
+
+                            Collaborator: Jovia <br>
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Blog Coming
+                                Soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            -->
+            </div>
+        </div>
+
+        <!--Life Blog-->
+        <div class="blog-container artLife-container" id="art&life-blog">
+            <p class="blog-quote">
+                "My Thoughts Between Birth & Death." - <span> Buya</span>
+                <!--🌹 🔓 🎓-->
+            </p>
+            <!-- <p class="blog-quote">
+                “Not <span>Me Thinking </span>I’m in a position to show and share,”
+                But I’l still do it.. -->
+            <!--🎓-->
+            <!-- </p>-->
+            <div class="book-previews">
+
+
+
+
+                <div class="book-option">
+                    <a href="./posts-code/Suicidal.html" class="book-image" id="suicideblog">
+                        <i class=" fa fa-play play-svg"></i>
+                    </a>
+                    <div class="book-summary">
+                        <p class="booktitle">Suicidal View</p>
+                        <p class="booksubtitle">
+                            February 2022
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/Suicidal.html" class="btn" s>Read Blog</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-option">
+                    <a href="./posts-code/hauntedbythefuture.html" class="book-image" id="blogone"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Haunted By The Future</p>
+                        <p class="booksubtitle">
+                            <!--30th-->November 2022
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/hauntedbythefuture.html" class="btn">Read Blog</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--      <hr style="    width: 100vw;
+                margin-top: 1rem;"> -->
+
+                <div class="book-option">
+                    <a href="./posts-code/Faith.html" class="book-image" id="faithblog">
+                        <i class=" fa fa-play play-svg"></i>
+                    </a>
+                    <div class="book-summary">
+                        <p class="booktitle">Discipline Demands Faith</p>
+                        <p class="booksubtitle">
+                            <!--Collaboration: Mike <br> -->
+                            <!--Date:  24th-->February 2023
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/Faith.html" style="opacity: 0.5;" class="btn">Uploading Soon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/Education.html" class="book-image" id="blogeduc">
+                        <i class=" fa fa-play play-svg"></i>
+                    </a>
+                    <div class="book-summary">
+                        <p class="booktitle">Education Is The Key</p>
+                        <p class="booksubtitle">
+                            <!--   Date: 20th.May.2022 -->
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/Education.html" style="opacity: 0.5;" class="btn">Uploading Soon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/Yokshosath.html" class="book-image" id="blogyok">
+                        <i class=" fa fa-play play-svg"></i>
+                    </a>
+                    <div class="book-summary">
+                        <p class="booktitle">Yokshosath.</p>
+                        <p class="booksubtitle">
+                            <!--   Date: 20th.May.2022 -->
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/Yokshosath.html" style="opacity: 0.5;" class="btn">Uploading Soon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/Blackraine.html" class="book-image" id="blogblackraine">
+                        <i class=" fa fa-play play-svg"></i>
+                    </a>
+                    <div class="book-summary">
+                        <p class="booktitle">Blacks In Ukraine [2022]</p>
+                        <p class="booksubtitle">
+                            <!-- After The Covid -->
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/Blackraine.html" style="opacity: 0.5;" class="btn">Uploading Soon</a>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <!--<div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="depre"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Depression</p>
+                        <p class="booksubtitle">
+
+                            Date: 03th | 08 | 2022
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Blog Coming
+                                Soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="artconcept"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">My Art Philosophy</p>
+                        <p class="booksubtitle">
+
+                            Date: 03th | 08 | 2022
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Blog Coming
+                                Soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-option">
+                    <a href="./posts-code/post-template.html" class="book-image" id="repellblog"></a>
+                    <div class="book-summary">
+                        <p class="booktitle">Depression Repellant</p>
+                        <p class="booksubtitle">
+
+                            Date: 09th | 08 | 2022
+                        </p>
+                        <div class="blog-btn">
+                            <a href="./posts-code/post-template.html" class="btn" style="opacity: 0.5;">Blog Coming
+                                Soon</a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L19 12.5" stroke="url(#paint0_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 7.5L19 12.5L12 17.5" stroke="url(#paint1_linear_249_1204)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_249_1204" x1="14.16" y1="11.5" x2="14.5723"
+                                        y2="15.3323" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_249_1204" x1="16.58" y1="7.5" x2="31.3975"
+                                        y2="14.3872" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#DA2727" />
+                                        <stop offset="1" stop-color="#2D2233" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+
+        <p class="question-any booksubtitle" style="text-align: center;
+        margin-top:2rem;">
+            To reach out ; <br>
+            [<a href="mailto: info@artbybuya.com" target="_blank"> info@artbybuya.com </a>/ <a
+                href="tel:+256783-909-668" target="_blank">
+                +256 783-909-668
+            </a>]
+        </p>
+
+
+
+        <div class="signupLetter">
+            <div class="headingLetter">
+                <h3 class="headLetter">
+                    Our NewsLetter
+                </h3>
+                <h5 class="offer-Letter">
+                    Join to get access to discounts & bonus content.
+                </h5>
+            </div>
+
+            <div class="inputbutton-Letter">
+                <div class="inputBox">
+                    <input type="text" id="subscriber-email" required="required">
+                    <span>Email address</span>
+                    <i></i>
+                </div>
+                <a onclick="SubscribeMail()">
+                    Join newsletter
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+        <h4 class="footer-header">Quick-Links</h4>
+        <div class="footer-lists">
+            <ul class="footer-links">
+                <li class="footer-link ">
+                    <a href="./index.html#aboveorder" class="footer-a services__button">
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                        Order Portrait</a>
+                </li>
+                <li class="footer-link ">
+                    <a href="./posts-code/ccl/index.html" class="footer-a services__button">
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                        Ceramics Site</a>
+                </li>
+                <li class="footer-link">
+                    <a href="./product.html" class="footer-a">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        Art Shop</a>
+                </li>
+                <li class="footer-link">
+                    <a href="./gallery.html#latestartwork" class="footer-a">
+                        <i class="fa fa-file-image" aria-hidden="true"></i>
+                        Art-Gallery</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-links">
+                <li class="footer-link">
+
+                    <a href="./about.html#collectorsReviews" class="footer-a">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                        Collectors Reviews</a>
+                </li>
+
+                <li class="footer-link">
+                    <a href="./about.html#pricing" class="footer-a">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                        Services</a>
+                </li>
+                <li class="footer-link">
+                    <a href="./about.html#questionssection" class="footer-a">
+                        <i class="fa fa-tags" aria-hidden="true"></i>
+                        Questions</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contactlinks">
+            <div class="footer-email-numbers">
+                <a href="mailto: info@artbybuya.com" target="_blank">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    info@artbybuya.com
+                </a>
+                <a href="tel:+256783-909-668" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 783-909668 🇺🇬
+                </a>
+                <a href="tel:+256753-620-788" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 753-620788 🇺🇬
+                </a>
+                <!--<a href="tel:+256753-620-788" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 753-620788 🇺🇬
+                </a> -->
+            </div>
+
+            <ul class="footer-social-icons">
+
+                <li class="footer-icon">
+                    <a href="https://twitter.com/ich_bin_buya" target="_blank" class="footer-i">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="https://wa.me/256783909668" target="_blank" class="footer-i">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                </li>
+                <li class="footer-icon">
+                    <a target="_blank" href="https://www.instagram.com/the_buya/" class="footer-i">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="footer-caption">
+                Site Architect:<a href="./index.html" target="_blank"> Buya</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <div id="progress">
+        <span id="progress-value"><img src="./assets/svgs/backtotop" alt="" srcset=""></span>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+                scrollProgress.style.right = "";
+            } else {
+                scrollProgress.style.display = "none";
+                scrollProgress.style.right = "-4rem";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#000 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+        };
+
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+
+
+
+
+
+    <!--Blog Change Javascript-->
+    <script>
+
+        //BLOG PAGE CHANGE
+        //
+        var tabButtons = document.querySelectorAll(".blog-section .blog-tab .tab");
+        var galleryButtons = document.querySelectorAll(".gallery-bigcontainer .blog-tab .tab");
+        var tabLabels = document.querySelectorAll(".blog-section .blog-tab .tab .blog-link");
+        var galleryLabels = document.querySelectorAll(".gallery-bigcontainer .blog-tab .tab .blog-link");
+        var tabPanels = document.querySelectorAll(".blog-section .blog-container");
+        var galleryPanels = document.querySelectorAll(".gallery-bigcontainer .pin_container")
+
+        function showPanel(panelIndex, colorCode) {
+            tabButtons.forEach(function (node) { //Node is number of eaches
+                node.style.backgroundColor = "";
+                node.style.color = "";
+            });
+            tabButtons[panelIndex].style.backgroundColor = colorCode;
+            tabButtons[panelIndex].style.color = "#fff";
+
+            tabLabels.forEach(function (node) {
+                node.style.color = ""
+            });
+            tabLabels[panelIndex].style.color = "#fff"
+
+
+            tabPanels.forEach(function (node) {
+                node.style.display = "none";
+            });
+            tabPanels[panelIndex].style.display = "flex";
+        }
+        //showGapanel(0,'#33C4E3'), //Sets The Current Tab
+        showPanel(1,'#AB6B17'); //Sets The Current Tab     1,'#AB6B17' 3,'#4B4B4B' 0, '#33C4E3'
+
+
+
+    </script>
+
+
+
+    <!--Main Javascript works when put below and not above.-->
+
+
+    <script src="./darkmode.js"></script>
+    <!--Main Javascript-->
+
+    <!--Subscribe Email Javascript-->
+    <script>
+        function SubscribeMail() {
+            var parameters = {
+                subscriberemail: document.getElementById("subscriber-email").value,
+            }
+            emailjs.send("service_n7vj3nc", "template_prwm9ew", parameters).then(function (res) {
+                alert("Subscription Successful.");
+            })
+            document.getElementById("subscriber-email").value = "";
+        }
+    </script>
+
+
+
+    <script src="./main_script.js"></script>
+</body>
+
+</html>

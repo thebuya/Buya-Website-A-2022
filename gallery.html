@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--For Facebook & Whatsapp -->
+    <!-- Site Name, Title, and Description To Be Displayed -->
+    <meta property="og:site_name" content="Buya Art">
+    <meta property="og:title" content="Gift Your Family">
+    <meta property="og:title" name="twitter:title" itemprop="name" content="Gift Your Family">
+    <meta property="og:description" content="Turning Memories Into Art For More Than Half A Decade.">
+    <meta property="og:description" name="twitter:description" itemprop="description"
+        content="Turning Memories Into Art For More Than Half A Decade.">
+
+
+    <!-- Image to Display -->
+    <meta property="og:image" itemprop="image" content="./preview.png">
+    <meta property="og:image" name="twitter:image:src" itemprop="image" content="./preview.png">
+    <!--For Microsoft Apps -->
+    <meta name="msapplication-TileImage" content="./preview.png">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Any Size upto 300. Above 300px will not wok in whatsapp -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <!-- Website to visit when clicked in Facebook or Whatsapp-->
+    <meta property="og:url" content="https://artbybuya.com">
+
+    <meta name="twitter:card" content="Choose Art">
+    <meta property="og:image:alt" name="twitter:image:alt"
+        content="Gift Your Family Art. Turning memories into art for over half a decade.">
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon2.ico" />
+    <link rel="icon" href="./favicon2.ico" />
+    <title>Art-Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/fonts/css/all.css">
+    <!-- UNI-Icons only -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!--Swiper CSS Locally -->
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/lightbox.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("G8mh0ombjCTxwWsiV");
+        })();
+    </script>
+    <style>
+        .dark-theme .active-link {
+            color: #fff;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP84J19V31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FP84J19V31');
+    </script>
+    <style>
+        .dark-theme .active-link {
+            color: #fff
+        }
+
+        .active-link {
+            color: var(--red-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="buya__nav">
+        <a href="./index.html">Home<span style="color: var(--red-color);">.</span></a>
+        <ul class="buya__nav_list" id="nav-menu">
+            <i class="fa fa-times nav__close" id="nav-close"></i>
+            <li><a href="./about.html" class="nav__link" onclick="changeNav(0)">About</a></li>
+            <li><a href="./product.html" class="nav__link" onclick="changeNav(1)">Art Shop</a></li>
+            <li><a href="" class="nav__link active-link" onclick="changeNav(2)">Gallery</a></li>
+            <!--<li><a href="#" class="nav__link">Downloads</a></li>-->
+            <li><a href="./blog.html" class="nav__link" onclick="changeNav(3)">Blog</a></li>
+            <li><a href="https://wa.me/256783909668" class="nav__link" id="contact-btn" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa fa-moon moon change-theme" id="theme-button" aria-hidden="true">
+                    </i>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="small-dark">
+            <i class="fa fa-moon moon change-theme" id="ztheme-button" aria-hidden="true">
+            </i>
+        </a>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+
+
+    <section class="gallery-bigcontainer blog-section">
+
+        <ul class="blog-tab">
+            <li class="tab zgatab" onclick="showGapanel(0,'#33C4E3')">
+                <a href="" class="surrealism blog-link ">
+                    <input type="radio" id="surrealismga" name="mytabs" checked="checked">
+                    <label for="surrealismga">Surrealism</label>
+                </a>
+            </li>
+            <li class="tab zgatab" onclick="showGapanel(1,'#AB6B17')">
+                <a href="" class="paintings blog-link ">
+                    <input type="radio" id="paintingsga" name="mytabs" checked="checked">
+                    <label for="paintingsga">Paintings</label>
+                </a>
+            </li>
+            <li class="tab zgatab">
+                <a href="" class="pencil blog-link" onclick="showGapanel(2,'#4B4B4B')">
+                    <input type="radio" id="pencilga" name="mytabs" checked="checked">
+                    <label for="pencilga">Pencil</label>
+                </a>
+            </li>
+        </ul>
+
+
+        <p class="blog-quote">
+
+            Contemporary art that's <span>, worth a second look</span>.
+        </p>
+
+        <!--Surreal-Art Gallery-->
+        <div class="pin_container surreal-container">
+
+
+
+            <div class="gacard gacard_small pg1">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="./product.html#thewholepointcases">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/whole_truth" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="THE WHOLE POINT [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium pg2 ">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="./product.html#depression">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="./product.html#dementorcases">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/depress" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="DEPRESSION [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large pg3" id="latestartwork">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="./product.html#webthree">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="./product.html#newbeginningscase">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/dp.jpg" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="NEW BEGINNINGS [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium pg4">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="./posts-code/Suicidal.html">Read Blog</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/suicide" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="SUICIDAL VIEW [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small pg5">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="#">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/ianangeline.jpg" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="Marriage is like two islands floating on this vast ocean, that decide to come together.">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large pg6">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="./product.html#thewholepointcases">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/bnm.jpg" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="My After-Life">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium pg7">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="./product.html#twogenerations">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="./product.html#twogenerationscase">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/RUral-urban-.jpg" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="TWO GENERATIONS">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small pg0">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#">Buy Frame</a>
+                        <a href="./posts-code/Faith.html">Read Blog</a>
+                        <!-- <a href="./product.html#thewholepointcases">Buy Phone Case</a> -->
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/faith.jpg" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="THE MUSTARD SEED OF FAITH [2023]]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small pg8">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="#">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Lauryn-Hill-Walllpaper..jpg" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="Lauryn Baby">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium pg9">
+                <div class="image-options">
+                    <div class="options" id="options">
+
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/mom.jpg" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="HARRIET KABURA NKUMBUYE HIGENYI aka MUMMY 🤍">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small pg10">
+                <div class="image-options">
+                    <div class="options" id="options">
+
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/mbahe" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="GRADUATION IMMORTALIZED">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium pg11">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#">Buy Frame</a>
+                        <a href="./posts-code/Yokshosath.html">Watch Vlog</a>
+                        <a href="#">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Falling-From-Grace2.jpg" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="FALLING FROM GRACE [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large pg12">
+                <div class="image-options">
+                    <div class="options" id="options">
+
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/isiah" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="I hope you're happy Now Isaiah. Rest In Peace.">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium pg13">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="./product.html#depressrepellcases">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/repelldepress" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="DEPRESSION REPELLANT [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small pg14">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="./product.html#controloflife">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="#">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Control-of-life-2.jpg" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="CONTROL OF LIFE">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+
+            </div>
+
+            <div class="gacard gacard_medium pg15">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#">Buy Frame</a>
+                        <a href="./posts-code/post-template.html">Blog Coming Soon</a>
+                        <a href="#">Buy Phone Case</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/DepthsofLife" class="eye-icon" data-lightbox="surrealWork"
+                    data-title="DEPTHS OF LIFE [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+
+
+        <!--Paintings Gallery-->
+        <div class="pin_container painting-container" id="painting-gallery">
+            <div class="gacard gacard_small paint1">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button">Get Yourself One</a>
+
+
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+
+                <a href="./assets/images/Paintings/Elizabeth" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Elizabeth's Gift To Her Family on Graduation [2021]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium paint2">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button2">Get Yourself One</a>
+
+
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/portrait-natasha" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Natashas Proposal - 2022">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large paint3">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button3">Get Yourself One</a>
+
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/shivan" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Shivans Commission For a Family Portrait. - 2022">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large paint4">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button4">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/nkata-bro" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Jonathans Wedding Gift To His Big brother. - 2022">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small paint5">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button5">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/Foreign-grad" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Aarons Gift To His Ethiopian Family On Their Special Day. - 2021">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large paint6">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button6">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/Batekerezzas" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Mr. Batekerezzas Commission For A Family Portrait - 2021">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium paint7">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button7">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/hapy-grad" class="eye-icon" data-lightbox="paintWork"
+                    data-title="A Graduation Gift - 2022">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium paint14">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button14">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/222.png" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Shivans Commission For Her Daughters - 2023">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small paint8">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button8">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/boss-lady" class="eye-icon" data-lightbox="paintWork"
+                    data-title="A Gift To A Boss - 2022">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium paint9">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button9">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/Olaki-Mom" class="eye-icon" data-lightbox="paintWork"
+                    data-title="A Mothers Day Gift - 2021.">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+
+            </div>
+
+            <div class="gacard gacard_small paint10">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button10">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/OGs" class="eye-icon" data-lightbox="paintWork"
+                    data-title="A Family Christmas Gift  - Dec.2020">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+
+            <div class="gacard gacard_large paint18">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button18">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/music.JPG" class="eye-icon" data-lightbox="paintWork"
+                    data-title="MUSIC - 2021">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+
+            <div class="gacard gacard_large paint12">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button12">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/Rihanna" class="eye-icon" data-lightbox="paintWork"
+                    data-title="RIHANNA - 2022">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small paint13">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button13">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/lillianfamily.jpg" class="eye-icon" data-lightbox="paintWork"
+                    data-title="LILLIAN MUTUNGI & FAMILY - 2021'">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium paint15">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button15">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/eric-grad" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Erics Graduation Gift - 2022'">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small paint16">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button16">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/ourfamily" class="eye-icon" data-lightbox="paintWork"
+                    data-title="A Family Christmas Gift - 2020'">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small paint20">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button20">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/sandragrad" class="eye-icon" data-lightbox="paintWork"
+                    data-title=" Commission For A Family Portrait - 2022 ">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large paint11">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button11">Get Yourself One</a>
+
+
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/NoelMoses-FullGift.jpg" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Moses and Noels Birthday Gift To GrandPa - 2023">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large paint17">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button17">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/redportrait" class="eye-icon" data-lightbox="paintWork"
+                    data-title="A Birthday Gift For A Friend. - 2022">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small paint19">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button19">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/albert-painting.jpg" class="eye-icon" data-lightbox="paintWork"
+                    data-title="Alberts Appreciation Gift To His Mother - 2022 ">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large paint21">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button21">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/Frames/SandraRed-frame.jpg" class="eye-icon"
+                    data-lightbox="paintWork" data-title="Sandras Gift To Her Life Partner - 2023 ">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium paint22">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button22">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/Frames/MosesMark-Frame" class="eye-icon" data-lightbox="paintWork"
+                    data-title="A Gift On Moses' Masters Gradaution - 2023">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium paint23">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button23">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/Sheila-mom-inlaw" class="eye-icon" data-lightbox="paintWork"
+                    data-title="A Gift To A Mother In Law - 2023">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large paint24">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__button24">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Paintings/Frames/Natasha2-Frame" class="eye-icon" data-lightbox="paintWork"
+                    data-title="NATASHA APPRECIATION [2023] ">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <!--Pencil Gallery-->
+        <div class="pin_container pencil-container">
+
+
+            <div class="gacard gacard_medium pencil0">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__buttonp1">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Pencil/sheila-before.jpg" class="eye-icon" data-lightbox="pencilWork"
+                    data-title="SHEILAS VALENTINES GIFT [2021]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_small pencil1">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__buttonp2">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Pencil/family-pencil" class="eye-icon" data-lightbox="pencilWork"
+                    data-title="BUYAS GRADUATION GIFT [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium pencil2">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__buttonp3">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Pencil/sheila.jpg" class="eye-icon" data-lightbox="pencilWork"
+                    data-title="SHEILAS BIRTHDAY GIFT [2022] ">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large pencil3">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__buttonp4">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Pencil/noah.jpg" class="eye-icon" data-lightbox="pencilWork"
+                    data-title="NOAHS GRADUATION GIFT [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_medium pencil4">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__buttonp5">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Pencil/laura-graduation-2023-frame" class="eye-icon" data-lightbox="pencilWork"
+                    data-title="LAURAS GRADUATION GIFT [2023]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large pencil5">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__buttonp6">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Pencil/uncle-buya.jpg" class="eye-icon" data-lightbox="pencilWork"
+                    data-title="UNCLES APPRECIATION GIFT [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="gacard gacard_large pencil6">
+                <div class="image-options">
+                    <div class="options" id="options">
+                        <a href="#" class="zservices__buttonp7">Get Yourself One</a>
+                    </div>
+                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="15" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                        <circle cx="4" cy="26" r="3.75" fill="#F3F3F3" stroke="#4B4B4B" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <a href="./assets/images/Pencil/Kudus-Pencil-2.jpg" class="eye-icon" data-lightbox="pencilWork"
+                    data-title="GHANA 3 REPUBLIC OF KOREA 2 COMMEMORATION [2022]">
+                    <img src="./assets/images/eye.png" alt="" srcset="">
+                </a>
+            </div>
+
+
+        </div>
+
+
+        <div class="button-container">
+            <div class="swipe-down-box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="#" class="button services__button" id="MakeOrder">Make Your Order</a>
+            <!--1.Order Portrait 2.Make Your Order-->
+
+            <div class="services__modal">
+                <div class="services__modal-content makeorder-stepcontent">
+
+                    <!-- <h4 class="services__modal-title">Standard Sizes </h4> -->
+                    <i class="fa fa-times services__modal-close" id="nav-close"></i>
+
+                    <form action="#" id="Form1" method="post" autocomplete="on">
+                        <h3>Ordering Your Portrait</h3>
+                        <div class="inputgroup">
+                            <input type="name" name="name" placeholder="Collectors Name" id="Collector-name"
+                                onkeyup="validateName()" required>
+                            <span id="name-error"></span>
+                        </div>
+                        <div class="inputgroup">
+                            <input type="email" name="email" placeholder="Collectors Email" id="Collector-email"
+                                onkeyup="validateEmail()" required>
+                            <span id="email-error"></span>
+                        </div>
+                        <div class="inputgroup">
+                            <input type="text" name="number" placeholder="Phone Number [Optional]" id="Collector-phone">
+
+                        </div>
+                        <div class="inputgroup">
+                            <textarea name="messageorder" cols="0" rows="5"
+                                placeholder="Tell us about the portrait you want." class="contact__input"
+                                id="Collector-message" onkeyup="validateMessage()"></textarea>
+                            <span id="message-error"></span>
+                        </div>
+
+
+
+
+                        <div class="btn-box">
+                            <button type="button" id="next1" onclick="return validateForm()">Next</button>
+                            <span id="next-error"></span>
+                        </div>
+                    </form>
+
+                    <form action="#" id="Form2">
+                        <h3>Art Details</h3>
+
+                        <div class="selections">
+                            <div class="framing-style">
+                                <h5>Size & Price</h5>
+
+                                <div class="selections-option">
+                                    <input type="radio" name="Size-Price" id="fram2" value="A4">
+                                    <!-- <label for="fram5">A4 - 150,000 UGX</label> -->
+                                    <label for="fram2" class="A4Price">A4 - 40 USD</label>
+                                </div>
+                                <div class="selections-option">
+                                    <input type="radio" name="Size-Price" id="fram5" value="A3">
+                                    <!-- <label for="fram5">A3 - 200,000 UGX</label> -->
+                                    <label for="fram5">A3 - 60 USD</label>
+                                </div>
+                                <div class="selections-option">
+                                    <input type="radio" name="Size-Price" id="fram6" value="A2">
+                                    <label for="fram6">A2 - 100 USD</label>
+                                    <!--  <label for="fram6">A2 - 350,000 UGX</label> -->
+                                </div>
+                                <div class="selections-option">
+                                    <input type="radio" name="Size-Price" id="fram3" value="A1">
+                                    <label for="fram3">A1 - 125 USD</label>
+                                    <!--  <label for="fram3">A1 - 500,000 UGX</label> -->
+                                </div>
+                                <div class="selections-option">
+                                    <input type="radio" name="Size-Price" id="fram4" value="A0">
+                                    <label for="fram4">A0 - 175 USD</label>
+                                    <!--  <label for="fram4">A0 - 600,000 UGX</label> -->
+                                </div>
+                            </div>
+
+                            <div class="framing-style">
+                                <h5>Frame Style</h5>
+                                <div class="selections-option">
+                                    <input type="radio" name="framing-style" id="fram1" value="canvas">
+                                    <label for="fram1"> Canvas Frame</label>
+                                </div>
+
+                                <div class="selections-option">
+                                    <input type="radio" name="framing-style" id="fram2" value="glass">
+                                    <label for="fram2"> Glass Frame</label>
+                                </div>
+                                <div class="selections-option">
+                                    <input type="radio" name="framing-style" id="fram7" value="board">
+                                    <label for="fram7"> On-Board</label>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="artstyle-quantity">
+                            <div class="art-style">
+                                <h5>Art Style</h5>
+                                <div class="selections-option">
+                                    <input type="radio" name="art-style" id="fram10" value="painting">
+                                    <label for="fram10"> Painting Art</label>
+                                </div>
+
+                                <div class="selections-option">
+                                    <input type="radio" name="art-style" id="fram20" value="pencil">
+                                    <label for="fram20"> Pencil Art</label>
+                                </div>
+
+
+
+                            </div>
+                            <div class="selections-optionz">
+                                <label for="fram1"> Quantity </label>
+                                <input type="number" placeholder="1">
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="btn-box">
+                            <button type="button" id="back1">Back</button>
+                            <button type="button" id="submit1">Submit Order</button>
+                            <span id="submit-error"></span>
+                        </div>
+
+                        <p class="footer-caption formcaption"> We will be in touch within 24hrs to initiate requirements
+                            and
+                            payments.</p>
+                    </form>
+
+
+
+                    <div class="step-row">
+                        <div id="zprogress"></div>
+                        <div class="step-col"><small>Step 1</small></div>
+                        <div class="step-col"><small>Step 2</small></div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="signupLetter">
+            <div class="headingLetter">
+                <h3 class="headLetter">
+                    Our Newsletter.
+                </h3>
+                <h5 class="offer-Letter">
+                    Join to get early art discounts.
+                    <!--and blogs. [later, : )]-->
+                </h5>
+            </div>
+
+            <div class="inputbutton-Letter">
+                <div class="inputBox">
+                    <input type="text" id="subscriber-email" required="required">
+                    <span>Email address</span>
+                    <i></i>
+                </div>
+                <a onclick="SubscribeMail()">
+                    Join newsletter
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <h4 class="footer-header">Quick-Links</h4>
+        <div class="footer-lists">
+            <ul class="footer-links">
+                <li class="footer-link">
+                    <a href="#" class="footer-a zservices__buttony">
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                        Order Portrait</a>
+
+
+                </li>
+                <li class="footer-link">
+                    <a href="./product.html" class="footer-a">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        Shop</a>
+                </li>
+                <li class="footer-link">
+                    <a href="./gallery.html#latestartwork" class="footer-a">
+                        <i class="fa fa-file-image" aria-hidden="true"></i>
+                        Art Gallery</a>
+                </li>
+
+
+            </ul>
+
+
+            <ul class="footer-links">
+
+
+                <li class="footer-link">
+                    <a href="./about.html#pricing" class="footer-a">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                        Services</a>
+                </li>
+                <li class="footer-link">
+                    <a href="./about.html#collectorsReviews" class="footer-a">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                        Reviews</a>
+                </li>
+                <li class="footer-link">
+                    <a href="./about.html#questionssection" class="footer-a">
+                        <i class="fa fa-tags" aria-hidden="true"></i>
+                        Client Questions</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contactlinks">
+            <div class="footer-email-numbers">
+                <a href="mailto: info@artbybuya.com" target="_blank">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    info@artbybuya.com
+                </a>
+                <a href="tel:+256783-909-668" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 783-909668
+                </a>
+                <a href="tel:+256753-620-788" target="_blank">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Call +256 753-620788
+                </a>
+            </div>
+
+            <ul class="footer-social-icons">
+                <li class="footer-icon">
+                    <a href="https://twitter.com/ich_bin_buya" target="_blank" class="footer-i">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="https://wa.me/256783909668" target="_blank" class="footer-i">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                </li>
+                <li class="footer-icon">
+                    <a target="_blank" href="https://www.instagram.com/the_buya/" class="footer-i">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="footer-caption">
+                Site Architect:<a href="./index.html" target="_blank"> The-Buya</a></p>
+        </div>
+    </footer>
+
+
+
+    <div id="progress">
+        <span id="progress-value"><img src="./assets/svgs/backtotop" alt="" srcset=""></span>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+                scrollProgress.style.right = "";
+            } else {
+                scrollProgress.style.display = "none";
+                scrollProgress.style.right = "-4rem";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#000 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+        };
+
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+
+    <script src="./darkmode.js"></script>
+
+
+
+
+    <!--form-validation script-->
+    <script>
+        var nameError = document.getElementById('name-error');
+        var messageError = document.getElementById('message-error');
+        var nextError = document.getElementById('next-error');
+        var submitError = document.getElementById('submit-error');
+        var emailError = document.getElementById('email-error');
+
+        function validateName() {
+            var name = document.getElementById('Collector-name').value;
+
+            if (name.length == 0) {
+                nameError.innerHTML = "Name is required.";
+                return false;
+            }
+            if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                nameError.innerHTML = ""; //Space names
+                return true;
+            }
+            nameError.innerHTML = '<i class="fas fa-check-circle"></i>';
+            return true;
+
+
+        }
+
+        function validateEmail() {
+
+            var email = document.getElementById('Collector-email').value;
+
+            if (email.length == 0) {
+                emailError.innerHTML = "Email is required.";
+                return false;
+            }
+            if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                emailError.style.color = "orange"
+                emailError.innerHTML = "email invalid.";
+                return false;
+            }
+            emailError.innerHTML = '<i class="fas fa-check-circle"></i>';
+            return true;
+
+
+        }
+
+        function validateMessage() {
+
+            var message = document.getElementById('Collector-message').value;
+            //var required = 50;
+            var required = 1;
+            var left = required - message.length;
+
+            if (message.length == 0) {
+                messageError.innerHTML = "Message required";
+                return false
+            }/*if (message.length < 10) {
+                messageError.style.color = "red"
+                messageError.innerHTML = "It would help if you gave a longer description";
+                return false
+            }/*
+            if (message.length < 20) {
+                messageError.style.color = "orange"
+                messageError.innerHTML = "Short";
+                return false
+            }
+            if (message.length < required) {
+                messageError.style.color = "orange"
+                messageError.innerHTML = "It would help if you gave a description";
+                return false
+            } */
+            messageError.innerHTML = '<i class="fas fa-check-circle"></i>';
+            return true
+
+        }
+
+
+
+
+    </script>
+
+
+
+    <script>
+        const modalViews = document.querySelectorAll('.services__modal'),
+
+            modalBtns = document.querySelectorAll('.zservices__button'),
+
+            modal2Btns = document.querySelectorAll('.zservices__button2'),
+            modal3Btns = document.querySelectorAll('.zservices__button3'),
+            modal4Btns = document.querySelectorAll('.zservices__button4'),
+            modal5Btns = document.querySelectorAll('.zservices__button5'),
+            modal6Btns = document.querySelectorAll('.zservices__button6'),
+            modal7Btns = document.querySelectorAll('.zservices__button7'),
+            modal8Btns = document.querySelectorAll('.zservices__button8'),
+            modal9Btns = document.querySelectorAll('.zservices__button9'),
+            modal10Btns = document.querySelectorAll('.zservices__button10'),
+            modal11Btns = document.querySelectorAll('.zservices__button11'),
+            modal12Btns = document.querySelectorAll('.zservices__button12'),
+            modal13Btns = document.querySelectorAll('.zservices__button13'),
+            modal14Btns = document.querySelectorAll('.zservices__button14'),
+            modal15Btns = document.querySelectorAll('.zservices__button15'),
+            modal16Btns = document.querySelectorAll('.zservices__button16'),
+            modal17Btns = document.querySelectorAll('.zservices__button17'),
+            modal18Btns = document.querySelectorAll('.zservices__button18'),
+            modal19Btns = document.querySelectorAll('.zservices__button19'),
+            modal20Btns = document.querySelectorAll('.zservices__button20'),
+            /*Update*/
+            modal21Btns = document.querySelectorAll('.zservices__button21'),
+            modal22Btns = document.querySelectorAll('.zservices__button22'),
+            modal23Btns = document.querySelectorAll('.zservices__button23'),
+            modal24Btns = document.querySelectorAll('.zservices__button24'),
+            modal25Btns = document.querySelectorAll('.zservices__button25'),
+
+            modalp1Btns = document.querySelectorAll('.zservices__buttonp1'),
+            modalp2Btns = document.querySelectorAll('.zservices__buttonp2'),
+            modalp3Btns = document.querySelectorAll('.zservices__buttonp3'),
+            modalp4Btns = document.querySelectorAll('.zservices__buttonp4'),
+            modalp5Btns = document.querySelectorAll('.zservices__buttonp5'),
+            modalp6Btns = document.querySelectorAll('.zservices__buttonp6'),
+            modalp7Btns = document.querySelectorAll('.zservices__buttonp7'),
+
+            modalxBtns = document.querySelectorAll('.zservices__buttonx'),
+            modalyBtns = document.querySelectorAll('.zservices__buttony'),
+            modalSBtns = document.querySelectorAll('.services__button'),
+
+
+            modalCloses = document.querySelectorAll('.services__modal-close')
+
+
+
+        let modal = function (modalClick) {
+            modalViews[modalClick].classList.add('active-modal')
+        }
+
+
+
+
+
+        modalBtns.forEach((modalBtn, i) => {
+            modalBtn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+
+            })
+        })
+        modalxBtns.forEach((modalxBtn, i) => {
+            modalxBtn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+
+        modalp1Btns.forEach((modalp1Btn, i) => {
+            modalp1Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modalSBtns.forEach((modalSBtn, i) => {
+            modalSBtn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modalp2Btns.forEach((modalp2Btn, i) => {
+            modalp2Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modalp3Btns.forEach((modalp3Btn, i) => {
+            modalp3Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modalp4Btns.forEach((modalp4Btn, i) => {
+            modalp4Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modalp5Btns.forEach((modalp5Btn, i) => {
+            modalp5Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modalp6Btns.forEach((modalp6Btn, i) => {
+            modalp6Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modalp7Btns.forEach((modalp7Btn, i) => {
+            modalp7Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+
+        modalyBtns.forEach((modalyBtn, i) => {
+            modalyBtn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+
+        modal2Btns.forEach((modal2Btn, i) => {
+            modal2Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal3Btns.forEach((modal3Btn, i) => {
+            modal3Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal4Btns.forEach((modal4Btn, i) => {
+            modal4Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal5Btns.forEach((modal5Btn, i) => {
+            modal5Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal6Btns.forEach((modal6Btn, i) => {
+            modal6Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal7Btns.forEach((modal7Btn, i) => {
+            modal7Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal8Btns.forEach((modal8Btn, i) => {
+            modal8Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal9Btns.forEach((modal9Btn, i) => {
+            modal9Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal10Btns.forEach((modal10Btn, i) => {
+            modal10Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal11Btns.forEach((modal11Btn, i) => {
+            modal11Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal12Btns.forEach((modal12Btn, i) => {
+            modal12Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal13Btns.forEach((modal13Btn, i) => {
+            modal13Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal14Btns.forEach((modal14Btn, i) => {
+            modal14Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal15Btns.forEach((modal15Btn, i) => {
+            modal15Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal16Btns.forEach((modal16Btn, i) => {
+            modal16Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal17Btns.forEach((modal17Btn, i) => {
+            modal17Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal18Btns.forEach((modal18Btn, i) => {
+            modal18Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal19Btns.forEach((modal19Btn, i) => {
+            modal19Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal20Btns.forEach((modal20Btn, i) => {
+            modal20Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal21Btns.forEach((modal21Btn, i) => {
+            modal21Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal22Btns.forEach((modal22Btn, i) => {
+            modal22Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal23Btns.forEach((modal23Btn, i) => {
+            modal23Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal24Btns.forEach((modal24Btn, i) => {
+            modal24Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+        modal25Btns.forEach((modal25Btn, i) => {
+            modal25Btn.addEventListener('click', () => {
+                modal(i)
+                Form1.style.left = "8%"; //Takes them back to step-1
+                Form2.style.left = "450px";
+                stepsProgress.style.width = "50%"
+            })
+        })
+
+
+
+
+
+
+
+        modalCloses.forEach((modalClose) => {
+            modalClose.addEventListener('click', () => {
+                modalViews.forEach((modalView) => {
+                    modalView.classList.remove('active-modal')
+                })
+            })
+        })
+
+
+
+    </script>
+
+
+    <script src="./main_script.js"></script>
+    <!--Before Change Gallery Blog, oR Else Bug-->
+
+    <!--CHANGE GALLERY BLOG -->
+    <script>
+        var tabButtons = document.querySelectorAll(".blog-section .blog-tab .zgatab");
+        var galleryButtons = document.querySelectorAll(".gallery-bigcontainer .blog-tab .zgatab");
+        var tabLabels = document.querySelectorAll(".blog-section .blog-tab .zgatab .blog-link");
+        var galleryLabels = document.querySelectorAll(".gallery-bigcontainer .blog-tab .zgatab .blog-link");
+        var tabPanels = document.querySelectorAll(".blog-section .blog-container");
+        var galleryPanels = document.querySelectorAll(".gallery-bigcontainer .pin_container");
+
+        function showGapanel(gapanelIndex, colorCode) {
+            galleryButtons.forEach(function (node) { //Node is number of eaches
+                node.style.backgroundColor = "";
+                node.style.color = "";
+            });
+            galleryButtons[gapanelIndex].style.backgroundColor = colorCode;
+            galleryButtons[gapanelIndex].style.color = "#fff";
+
+            galleryLabels.forEach(function (node) {
+                node.style.color = ""
+            });
+            galleryLabels[gapanelIndex].style.color = "#fff"
+
+            galleryPanels.forEach(function (node) {
+                node.style.display = "none";
+            });
+            galleryPanels[gapanelIndex].style.display = "grid";
+        }
+
+        showGapanel(1, '#AB6B17'); //1,'#AB6B17' 0, '#33C4E3'
+
+    </script>
+
+
+
+
+
+
+
+
+    <!--Viewing Full Gallery-->
+    <script src="./assets/lightbox-plus-jquery.js"></script>
+
+
+
+    <!-- Which Radio Button Is Selected-->
+    <script>
+        let sizePrices = document.querySelectorAll("input[name='Size-Price']");
+        let frameStyles = document.querySelectorAll("input[name='framing-style']");
+        let artStyles = document.querySelectorAll("input[name='art-style']");
+        //-> SelectorAll - Lest bug
+
+
+
+
+
+        let findsizeSelected = () => {
+            let sizeSelected = document.querySelector("input[name='Size-Price']:checked").value;
+            //Had to be selector not selectorAll - lestbug
+
+            console.log(sizeSelected);
+        }
+
+
+
+        let findframeSelected = () => {
+            let frameSelected = document.querySelector("input[name='framing-style']:checked").value;
+            //Had to be selector not selectorAll - lestbug
+
+            console.log(frameSelected);
+
+        }
+        let findstyleSelected = () => {
+            let artSelected = document.querySelector("input[name='art-style']:checked").value;
+            //Had to be selector not selectorAll - lestbug
+
+            console.log(artSelected);
+        }
+
+
+
+        let findSelected = () => {
+            findsizeSelected();
+            findframeSelected();
+            findstyleSelected();
+
+        }
+
+
+        sizePrices.forEach(sizePrice => {
+            sizePrice.addEventListener("change", findSelected);
+
+
+        });
+
+          // 
+        // Moved it to be called where submit is pressed.
+    </script>
+
+
+
+    <!--Sending-MailOrder-Script-->
+    <script>
+        function MailOrder() {
+            var parameters = {
+                collectorname: document.getElementById("Collector-name").value,
+                collectoremail: document.getElementById("Collector-email").value,
+                collectorphone: document.getElementById("Collector-phone").value,
+                collectormessage: document.getElementById("Collector-message").value,
+                artsize: document.querySelector("input[name='Size-Price']:checked").value,
+                styleframe: document.querySelector("input[name='framing-style']:checked").value,
+                styleart: document.querySelector("input[name='art-style']:checked").value
+            }
+            emailjs.send("service_n7vj3nc", "template_prwm9ew", parameters).then(function (res) {
+                console.log("Success!!" + res.status); /* alert - Helps know which is working*/
+            })
+        }
+    </script>
+
+
+
+    <!--Subscribing-Mail-Script-->
+    <script>
+        function SubscribeMail() {
+            var parameters = {
+                subscriberemail: document.getElementById("subscriber-email").value,
+            }
+            emailjs.send("service_n7vj3nc", "template_prwm9ew", parameters).then(function (res) {
+                alert("Subscription Successful.");
+
+            })
+            document.getElementById("subscriber-email").value = "";
+
+
+        }
+    </script>
+
+
+
+
+
+    <!--//Make order Script -->
+    <script>
+
+        var mkbutton = document.getElementById("MakeOrder");
+
+        var Form1 = document.getElementById("Form1");
+        var Form2 = document.getElementById("Form2");
+
+        var Next1 = document.getElementById("next1");
+        var Back1 = document.getElementById("back1");
+
+
+
+        var Submit1 = document.getElementById("submit1");
+
+        var stepsProgress = document.getElementById("zprogress");
+
+
+
+
+
+
+
+
+
+        mkbutton.onclick = function () {
+            Form1.style.left = "8%";
+            Form2.style.left = "450px";
+            stepsProgress.style.width = "50%"
+
+        }
+
+        Next1.onclick = function () {
+            //Prevents the next form from appearing until validation for inputs is carried out
+            /* if (!validateName() || !validateEmail() || !validateMessage()) {
+                 nextError.style.display = 'block';
+                 nextError.innerHTML = "Please fix errors to proceed.";
+                 setTimeout(function(){nextError.style.display = 'none';}, 3000);
+                 return false;
+             }*/
+            Form1.style.left = "-450px";
+            Form2.style.left = "8%";
+            stepsProgress.style.width = "100%"
+        }
+        Back1.onclick = function () {
+            Form1.style.left = "8%";
+            Form2.style.left = "450px";
+            stepsProgress.style.width = "50%"
+        }
+
+
+
+
+        Submit1.addEventListener("click", function () {
+            if (!validateName() || !validateEmail() || !validateMessage()) {
+                submitError.style.display = 'block';
+                submitError.innerHTML = "please fix parts of step 1 to submit";
+                setTimeout(function () { submitError.style.display = 'none'; }, 3000);
+
+                return false;
+            }
+
+
+            modalViews.forEach((modalView) => {
+                modalView.classList.remove('active-modal')
+            })
+            findSelected();
+            MailOrder();
+
+            setTimeout(function () {
+                findSelected();
+                alert("You successfully placed an order. We will be in touch within 48 hours. Thank you");
+            }, 500)
+        });
+    </script>
+
+
+    <!--Main Javascript-->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" />
+    <title>Buya-Art-Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/fonts/css/all.css">
+    <!--Swiper CSS Locally -->
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+    <style>
+        .dark-theme .active-link{
+            color: #fff;
+        }
+</style>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="buya__nav">
+        <a href="./index.html" target="_blank">Home<span style="color: var(--red-color);">.</span></a>
+        <ul class="buya__nav_list" id="nav-menu">
+            <i class="fa fa-times nav__close" id="nav-close"></i>
+            <li><a href="./about.html" target="_blank" class="nav__link" onclick="changeNav(0)">About</a></li>
+            <li><a href="#" class="nav__link active-link" onclick="changeNav(1)">Art Shop</a></li>
+            <li><a href="./gallery.html" target="_blank" class="nav__link" onclick="changeNav(2)">Gallery</a></li>
+            <li><a href="./blog.html" target="_blank" class="nav__link" onclick="changeNav(3)">Blog</a></li>
+            <li><a href="#" class="nav__link" onclick="changeNav(4)">Contact</a></li>
+            <li><a href="#" class="nav__link cart__link cart1"><i class="fa fa-shopping-cart" aria-hidden="true">
+                        <span class="word-count" id="cart-count">0</span></i></a>
+                <div class="cart-side">
+
+                </div>
+            </li>
+        </ul>
+        <a href="#" class="nav__link cart__link cart2"><i class="fa fa-shopping-cart" aria-hidden="true">
+                <span class="word-count" id="cart-count2">0</span></i></a>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+
+
+    <section class="blog-section productmain-container">
+        <div class="wrapper">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search product name here..." />
+                <button id="search">Search</button>
+            </div>
+
+            <div id="buttons">
+                <button class="button-value" onclick="filterProduct('all')">All</button>
+                <button class="button-value" onclick="filterProduct('wall-Art')">Wall-Art</button>
+                <button class="button-value" onclick="filterProduct('apparell')">Apparell</button>
+                <button class="button-value" onclick="filterProduct('phone-Cases')">Phone-Cases</button>
+                <button class="button-value" onclick="filterProduct('tokens')">Tokens</button>
+            </div>
+            <div id="products"></div>
+            <!--Elements Appended, while in Javascript-->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="progress">
+        <span id="progress-value"><img src="./assets/svgs/backtotop" alt="" srcset=""></span>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+                scrollProgress.style.right = "";
+            } else {
+                scrollProgress.style.display = "none";
+                scrollProgress.style.right = "-4rem";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#000 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+        };
+
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+
+
+
+
+    <script src="./cart.js"></script>
+    <script src="./main_script.js"></script>
+</body>
+
+</html>

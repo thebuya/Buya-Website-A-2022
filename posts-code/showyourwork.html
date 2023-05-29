@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon.ico" />
+    <link rel="icon" href="../assets/images/BUYA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style.css">
+    <!--Main Styling-->
+    <!--<script src="./main_script.js"></script> -->
+    <!--Main Javascript-->
+    <link rel="stylesheet" href="../assets/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/fonts/css/all.css"> <!-- Icons only -->
+    <title>Shop Buya-Art / Blog Post</title>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="buya__nav">
+        <a href="../index.html">Home<span style="color: var(--red-color);">.</span></a>
+        <ul class="buya__nav_list" id="nav-menu">
+            <i class="fa fa-times nav__close" id="nav-close"></i>
+            <li><a href="../about.html" class="nav__link" onclick="changeNav(0)">About</a></li>
+            <li><a href="../product.html" class="nav__link" onclick="changeNav(1)">Art Shop</a></li>
+            <li><a href="../gallery.html" class="nav__link" onclick="changeNav(2)">Gallery</a></li>
+            <li><a href="../blog.html" class="nav__link" onclick="changeNav(3)" style="color: #eac526;">Blog</a></li>
+            <li><a href="https://wa.me/256783909668" class="nav__link" id="contact-btn" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa fa-moon moon change-theme" id="theme-button" aria-hidden="true">
+                    </i>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="small-dark">
+            <i class="fa fa-moon moon change-theme" id="ztheme-button" aria-hidden="true">
+            </i>
+        </a>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+
+
+    <section class="post-container showWorkPost">
+        <div class="header-post">
+            <div class="post-header">
+
+            </div>
+        </div>
+
+
+        <div class="post-text-container">
+            <h2 class="post-title">
+                "Show Your Work"
+            </h2>
+
+            <p class="post-text">
+
+                If you create something everyday, anything, then this book is for you, I believe that
+                means this book is for everyone then, because everyday whether we know it or not, we create
+                something that someone out in here on the internet landscape woould benefit from viewing.
+
+                <br><br>
+
+                With a series of short
+                also be of a person I can't remember in the future ?.
+                Is the world I lived in then, the same as the world I live in today ?.
+                "Should I Care ?", I wonder.
+                <br><br>
+                What happened to all these foggy characters I can’t seem to remember ?
+                Was one of them my Dad ? How do these
+                characters (if still alive) look back on that moment? Can they remember me ?
+                What happens when current me is now past me ?
+                Will I still look back in the same way,
+                not remembering where I was, or who I was with, or more importantly
+                Why I Was anywhere. Will I look back with the feeling of
+                “Oh, when you thought the world was yours ?” Or will it be a completely
+                unique feeling, one I am yet to ever experience.
+
+                <br><br>
+
+                <!--  <span class="post-quote"> <span style="color: var(--red-color);">"</span> 
+                    The Future is a prison, 
+                    and we are both the wardens and prisoners.<span style="color: var(--red-color);">"</span>
+                </span>-->
+                <span class="post-quote"> <span>"</span>
+                    The Future is a prison,
+                    and we are both the wardens and prisoners.<span>"</span>
+                </span>
+                <!----> <span class="author-name"> Me, Myself & I</span>
+
+                <br><br>
+
+
+
+
+                At that moment I begun to realise how often I have thought of my view
+                as the “main view” in most memories. Yet, at this point
+                I was now thinking of myself as a bystander in time. I am not the central
+                figure of the story. The entire World Is, and I am a passenger.
+                The story is the world. <br> <br>
+
+
+
+                <!--<span class="post-number" style="font-weight: 500;" >2. </span> -->
+                This by stander feeling felt so important yet so ‘sad’ .
+                I am just like everyone else, just another character in a story so old,
+                we can’t all seem to agree when or how it started.
+                Should I be sad about the fact that I am like everyone?
+                Or should I be glad that none of my worries or problems matter at all
+                since I am not central to the only thing that matters,
+                This thing we call The Whole World.
+
+                <br><br>
+
+
+
+
+        </div>
+
+
+
+        <div class="signupLetter">
+            <div class="headingLetter">
+                <h3 class="headLetter">
+                    Our NewsLetter
+                </h3>
+                <h5 class="offer-Letter">
+                    Join to get discounts & bonus art content.
+                </h5>
+            </div>
+
+            <div class="inputbutton-Letter">
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Email address</span>
+                    <i></i>
+                </div>
+                <a style="background: #eac526; color: #1C1C1C;">
+                    Join newsletter
+                </a>
+            </div>
+        </div>
+
+
+        <a href="../blog.html" class="backblog">
+            <p>Back To Blogs</p>
+        </a>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <div id="progress">
+        <span id="progress-value"><img src="../assets/svgs/backtotop" alt="" srcset=""></span>
+    </div>
+
+
+
+    <script src="../darkmode.js"></script>
+
+
+
+
+    <script>
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+                scrollProgress.style.right = "";
+            } else {
+                scrollProgress.style.display = "none";
+                scrollProgress.style.right = "-4rem";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#000 ${scrollValue}%, #eac526 ${scrollValue}%)`;
+        };
+
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+
+    <script src="../main_script.js"></script>
+</body>
+
+</html>
